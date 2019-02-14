@@ -7,6 +7,8 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/:lamborCai.svg?label=Follow)](https://twitter.com/lamborCai)
 
 
+[Blog](https://lanbery.github.io '👉 浏览Blog')
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/lanbery/lanbery.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
