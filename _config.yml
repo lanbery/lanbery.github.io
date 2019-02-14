@@ -1,1 +1,98 @@
 theme: jekyll-theme-minimal
+# Site settings
+title: lanbery Blog
+SEOTitle: 浮塵 技术博客 | lanbery Technology Blog 
+header-img: img/banner_bg.png
+email: lanbery@gmail.com
+description: "Live for die."
+keyword: "IPFS, NBS Blog,NBS,去中心化,NAT"
+url: "https://lanbery.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/lanbery" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Live for die."
+sidebar-avatar: /img/team-logo.png 
+
+# SNS settings
+RSS: false
+weibo_username:    nbsio
+#zhihu_username:    Naruto
+github_username:    NBSChain
+#facebook_username:  jnaruto.nbs.9
+jianshu_username:   832753b872c5
+#twitter_username:   jnaruto4
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: 
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: d3c45d7ef16bc3ddca7d                            #生成的clientID
+  clientSecret: 56fa150464e595de8bb9e00973258ae9aabd54b2    #生成的clientSecret
+  repo: go-nbs    #仓库名称
+  owner: NBSChain     #github用户名
+  admin: NBSChain
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+# id: window.location.pathname
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id: b50bf2b12b5338a1845e33832976fd68
+
+# Google Analytics
+ga_track_id: 'UA-134423190-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+  {
+      title: "JNaruto Blog",
+      href: "https://jnaruto.github.io"
+  }
+]

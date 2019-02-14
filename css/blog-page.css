@@ -1,0 +1,16 @@
+p.section-indent {
+	text-indent:2em;
+}
+a.copyright-link {
+	font-size:smaller;
+	margin-bottom: 20px;
+	text-decoration:none;
+}
+
+a.copyright-link:hover {
+	color: #021920;	
+}
+
+a.copyright-link:link {
+	color: #021920;
+}
