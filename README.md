@@ -6,8 +6,8 @@
 [![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)](https://github.com/NBSChain?tab=following)
 [![Twitter Follow](https://img.shields.io/twitter/follow/:lamborCai.svg?label=Follow)](https://twitter.com/lamborCai)
 
-
-[👉 浏览Blog](https://lanbery.github.io)
+## Blog Home 👉
+[Blog](https://lanbery.github.io)
 
 ## Welcome to GitHub Pages
 
