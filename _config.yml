@@ -1,11 +1,11 @@
 theme: jekyll-theme-minimal
 # Site settings
 title: lanbery Blog
-SEOTitle: 浮塵 技术博客 | lanbery Technology Blog 
-header-img: img/banner_bg.png
+SEOTitle: 浮塵的博客 | lanbery Technology Blog 
+header-img: img/martin-one-banner.png
 email: lanbery@gmail.com
 description: "Live for die."
-keyword: "IPFS, NBS Blog,NBS,去中心化,NAT"
+keyword: "Technology, IT Blog,NBS,去中心化,NAT"
 url: "https://lanbery.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/lanbery" # you code repository
@@ -92,7 +92,7 @@ service-worker: true
 # Friends
 friends: [
   {
-      title: "JNaruto Blog",
-      href: "https://jnaruto.github.io"
+      title: "NBS Blog",
+      href: "https://nbschain.github.io"
   }
 ]
