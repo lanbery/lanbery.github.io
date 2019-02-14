@@ -196,7 +196,7 @@ layout: default
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
-                        <li><a target="_blank" href="{{friend.href}}" >{{friend.title}}</a></li>
+                        <li><a target="{{friend.title}}" href="{{friend.href}}" >{{friend.title}}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
