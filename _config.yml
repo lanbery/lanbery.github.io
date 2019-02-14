@@ -94,5 +94,9 @@ friends: [
   {
       title: "NBS Blog",
       href: "https://nbschain.github.io"
+  },
+  {
+      title: "lamborcai Github",
+      href: "https://github.com/lamborcai"
   }
 ]
