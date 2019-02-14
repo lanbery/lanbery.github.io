@@ -7,7 +7,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/:lamborCai.svg?label=Follow)](https://twitter.com/lamborCai)
 
 
-[Blog](https://lanbery.github.io '👉 浏览Blog')
+[👉 浏览Blog](https://lanbery.github.io)
 
 ## Welcome to GitHub Pages
 
