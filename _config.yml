@@ -2,7 +2,7 @@ theme: jekyll-theme-minimal
 # Site settings
 title: lanbery Blog
 SEOTitle: 浮塵的博客 | lanbery Technology Blog 
-header-img: img/martin-one-banner.git
+header-img: img/martin-one-banner.png
 email: lanbery@gmail.com
 description: "Live for die."
 keyword: "Technology, IT Blog,NBS,去中心化,NAT"
