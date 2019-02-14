@@ -1,5 +1,5 @@
-![Repo Size](https://img.shields.io/github/repo-size/lanbery/lanbery.github.io.svg?colorB=red&logo=git&logoColor=blue&style=flat-square)
-![GitHub languages](https://img.shields.io/github/languages/count/lanbery/lanbery.github.io.svg?logoColor=%23D64411&style=flat-square&logo=github)
+[![Repo Size](https://img.shields.io/github/repo-size/lanbery/lanbery.github.io.svg?colorB=red&logo=git&logoColor=blue&style=flat-square)](https://github.com/lanbery)
+[![GitHub languages](https://img.shields.io/github/languages/count/lanbery/lanbery.github.io.svg?logoColor=%23D64411&style=flat-square&logo=github)](https://github.com/lanbery/lanbery.github.io)
 [![GitHub license](https://img.shields.io/github/license/lanbery/lanbery.github.io.svg?style=flat-square&logo=github)](https://github.com/lanbery/lanbery.github.io/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/lanbery/lanbery.github.io.svg?style=flat-square&logo=github)](https://github.com/lanbery/lanbery.github.io/issues)
 
