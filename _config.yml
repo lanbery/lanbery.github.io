@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 # Site settings
-title: lanbery
+title: Lanbery Blog
 SEOTitle: 浮塵的博客 | lanbery Technology Blog 
 header-img: img/martin-one-banner.png
 email: lanbery@gmail.com
@@ -18,10 +18,10 @@ sidebar-avatar: /img/lamborcar.gif
 # SNS settings
 RSS: false
 weibo_username: 1879528630
-#zhihu_username:    Naruto
+#zhihu_username:    lanbery
 github_username:    lanbery
 facebook_username:  lanbery.cai.7
-#jianshu_username:   832753b872c5
+#jianshu_username:   03bb6c19b4ca
 twitter_username:   lamborCai
 
 # Build settings
