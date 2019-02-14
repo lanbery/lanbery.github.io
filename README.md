@@ -1,3 +1,12 @@
+[![GitHub issues](https://img.shields.io/github/issues/NBSChain/NBS-QML.svg)](https://github.com/NBSChain/nbschain.github.io/issues)
+[![GitHub forks](https://img.shields.io/github/forks/NBSChain/NBS-QML.svg)](https://github.com/NBSChain/nbschain.github.io/network)
+[![GitHub stars](https://img.shields.io/github/stars/NBSChain/NBS-QML.svg)](https://github.com/NBSChain/nbschain.github.io/stargazers)
+[![GitHub license](https://img.shields.io/github/license/NBSChain/NBS-QML.svg)](https://github.com/NBSChain/nbschain.github.io/blob/master/LICENSE)
+
+[![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)](https://github.com/NBSChain?tab=following)
+[![Twitter Follow](https://img.shields.io/twitter/url/https/lamborCai.svg?style=social)](https://twitter.com/lamborCai)
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/lanbery/lanbery.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
