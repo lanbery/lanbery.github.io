@@ -1,11 +1,17 @@
-[![GitHub issues](https://img.shields.io/github/issues/NBSChain/NBS-QML.svg)](https://github.com/NBSChain/nbschain.github.io/issues)
-[![GitHub forks](https://img.shields.io/github/forks/NBSChain/NBS-QML.svg)](https://github.com/NBSChain/nbschain.github.io/network)
-[![GitHub stars](https://img.shields.io/github/stars/NBSChain/NBS-QML.svg)](https://github.com/NBSChain/nbschain.github.io/stargazers)
-[![GitHub license](https://img.shields.io/github/license/NBSChain/NBS-QML.svg)](https://github.com/NBSChain/nbschain.github.io/blob/master/LICENSE)
+
+![GitHub languages](https://img.shields.io/github/languages/count/lanbery/lanbery.github.io.svg?logoColor=%23D64411&style=social)
+[![GitHub license](https://img.shields.io/github/license/lanbery/lanbery.github.io.svg)](https://github.com/lanbery/lanbery.github.io/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/lanbery/lanbery.github.io.svg)](https://github.com/lanbery/lanbery.github.io/issues)
+
+[![GitHub forks](https://img.shields.io/github/forks/lanbery/lanbery.github.io.svg)](https://github.com/NBSChain/nbschain.github.io/network)
+[![GitHub stars](https://img.shields.io/github/stars/lanbery/lanbery.github.io.svg)](https://github.com/NBSChain/nbschain.github.io/stargazers)
+
 
 [![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)](https://github.com/NBSChain?tab=following)
-[![Twitter Follow](https://img.shields.io/twitter/url/https/lamborCai.svg?style=social)](https://twitter.com/lamborCai)
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/lamborCai.svg?style=social)](https://twitter.com/lamborCai)
+
+[👉 Blog Home](https://lanbery.github.io)
 
 ## Welcome to GitHub Pages
 
