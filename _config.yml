@@ -2,7 +2,7 @@ theme: jekyll-theme-minimal
 # Site settings
 title: lanbery Blog
 SEOTitle: 浮塵的博客 | lanbery Technology Blog 
-header-img: img/martin-one-banner.png
+header-img: img/martin-one-banner.git
 email: lanbery@gmail.com
 description: "Live for die."
 keyword: "Technology, IT Blog,NBS,去中心化,NAT"
@@ -13,7 +13,7 @@ github_repo: "https://github.com/lanbery" # you code repository
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Live for die."
-sidebar-avatar: /img/team-logo.png 
+sidebar-avatar: /img/lamborcar.gif 
 
 # SNS settings
 RSS: false
