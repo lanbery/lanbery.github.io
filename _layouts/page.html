@@ -135,7 +135,7 @@ layout: default
                             {% endif %}
                             {% if site.twitter_username %}
                             <li>
-                                <a href="https://twitter.com/{{ site.twitter_username }}" target="twitter-{{ site.twitter_username }}">
+                                <a target="twitter-{{ site.twitter_username }}" href="https://twitter.com/{{ site.twitter_username }}" >
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -175,7 +175,7 @@ layout: default
                             {% endif %}
                             {% if site.github_username %}
                             <li>
-                                <a href="https://github.com/{{ site.github_username }}" target="github-{{ site.github_username }}">
+                                <a target="github-{{ site.github_username }}" href="https://github.com/{{ site.github_username }}" >
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -196,7 +196,7 @@ layout: default
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
+                        <li><a target="_blank" href="{{friend.href}}" >{{friend.title}}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
