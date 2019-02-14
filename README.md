@@ -1,7 +1,7 @@
-
-![GitHub languages](https://img.shields.io/github/languages/count/lanbery/lanbery.github.io.svg?logoColor=%23D64411&style=social)
-[![GitHub license](https://img.shields.io/github/license/lanbery/lanbery.github.io.svg?style=social)](https://github.com/lanbery/lanbery.github.io/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/lanbery/lanbery.github.io.svg?style=social)](https://github.com/lanbery/lanbery.github.io/issues)
+![Repo Size](https://img.shields.io/github/repo-size/lanbery/lanbery.github.io.svg?colorB=red&logo=git&logoColor=blue&style=flat-square)
+![GitHub languages](https://img.shields.io/github/languages/count/lanbery/lanbery.github.io.svg?logoColor=%23D64411&style=flat-square&logo=github)
+[![GitHub license](https://img.shields.io/github/license/lanbery/lanbery.github.io.svg?style=flat-square&logo=github)](https://github.com/lanbery/lanbery.github.io/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/lanbery/lanbery.github.io.svg?style=flat-square&logo=github)](https://github.com/lanbery/lanbery.github.io/issues)
 
 [![GitHub forks](https://img.shields.io/github/forks/lanbery/lanbery.github.io.svg?style=social)](https://github.com/lanbery/lanbery.github.io/network)
 [![GitHub stars](https://img.shields.io/github/stars/lanbery/lanbery.github.io.svg?style=social)](https://github.com/lanbery/lanbery.github.io/stargazers)
