@@ -4,7 +4,7 @@ title:      奔驰LSR车型回归
 subtitle:   奔驰官网发布SLR车型回归计划
 date:       2019-03-09
 author:     lanbery
-header-img: docs/images/mercedes-benz-slr-_m.jpg
+header-img: docs/images/car/mercedes-benz-slr-_m.jpg
 catalog: true
 tags:
     - News
