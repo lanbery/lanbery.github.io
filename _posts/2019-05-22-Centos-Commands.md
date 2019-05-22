@@ -19,3 +19,6 @@ tags:
 	systemctl enable mysqld //加入开机启动
 	systemctl start nginx
 </code>
+
+## ll /proc/[pid] 查看进程信息
+top 
