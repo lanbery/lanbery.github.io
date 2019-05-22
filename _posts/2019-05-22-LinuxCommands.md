@@ -2,7 +2,7 @@
 layout:     post
 title:      Linux 常用命令
 subtitle:   命令
-date:       2018-07-11
+date:       2019-05-22
 author:     lanbery
 header-img: img/post-bg-hacker.jpg
 catalog: true
