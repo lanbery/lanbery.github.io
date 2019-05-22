@@ -19,11 +19,26 @@ tags:
            [[user@]host1:]file1 ... [[user@]host2:]file2
 <html>
 <p class="section-indent">
+	复制本地文件到远程
 </p>
-<img src="">
+<code json>
+	scp local_file remote_user@remote_ip:remote_folder
+</code>
 <p class="section-indent">
+	复制本地文件目录到远程
 </p>
-<img src="">
+<code json>
+	scp -r local_folder remote_user@remote_ip:remote_folder	
+</code>
+
+<hr/>
+
+<p class="section-indent">
+	从远程复制文件或目录到本地
+</p>
+<code json>
+	scp [-r]  remote_user@remote_ip:remote_folder/xxx.file[copy_folder] /opt/recv_folder/	
+</code>
 
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
 	<div class="pull-right">
