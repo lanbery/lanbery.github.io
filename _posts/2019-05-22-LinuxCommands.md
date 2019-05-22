@@ -40,9 +40,12 @@ tags:
 	scp [-r]  remote_user@remote_ip:remote_folder/xxx.file[copy_folder] /opt/recv_folder/	
 </code>
 
+
+<hr/>
+
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
 	<div class="pull-right">
-		<a href="#" target="_blank" class="copyright-link">
+		<a href="#" target="_self" class="copyright-link">
 			著作权归作者
 			{% if page.author %}
 <strong>{{ page.author }}</strong>
