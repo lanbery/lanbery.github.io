@@ -41,9 +41,9 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 
   - user
 
-`sudo useradd nexus`
-`sudo chown -R /opt/nexus`
-`sudo chown -R /work/nexus`
+`sudo useradd nexus`<br />
+`sudo chown -R /opt/nexus`<br />
+`sudo chown -R /work/nexus`<br />
 
 
 ### 修改配置 
@@ -54,49 +54,49 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
   - nexus.vmoptions
 
 <code>
--Xms1200M
--Xmx1200M
--XX:MaxDirectMemorySize=2G
--XX:+UnlockDiagnosticVMOptions
--XX:+UnsyncloadClass
--XX:+LogVMOutput
--XX:LogFile=/work/nexus-data/sonatype-work/nexus3/log/jvm.log
--XX:-OmitStackTraceInFastThrow
--Djava.net.preferIPv4Stack=true
--Dkaraf.home=.
--Dkaraf.base=.
--Dkaraf.etc=etc/karaf
--Djava.util.logging.config.file=etc/karaf/java.util.logging.properties
--Dkaraf.data=/work/nexus-data/sonatype-work/nexus3
--Djava.io.tmpdir=/work/nexus-data/sonatype-work/nexus3/tmp
--Dkaraf.startLocalConsole=false	
+-Xms1200M<br />
+-Xmx1200M<br />
+-XX:MaxDirectMemorySize=2G<br />
+-XX:+UnlockDiagnosticVMOptions<br />
+-XX:+UnsyncloadClass<br />
+-XX:+LogVMOutput<br />
+-XX:LogFile=/work/nexus-data/sonatype-work/nexus3/log/jvm.log<br />
+-XX:-OmitStackTraceInFastThrow<br />
+-Djava.net.preferIPv4Stack=true<br />
+-Dkaraf.home=.<br />
+-Dkaraf.base=.<br />
+-Dkaraf.etc=etc/karaf<br />
+-Djava.util.logging.config.file=etc/karaf/java.util.logging.properties<br />
+-Dkaraf.data=/work/nexus-data/sonatype-work/nexus3<br />
+-Djava.io.tmpdir=/work/nexus-data/sonatype-work/nexus3/tmp<br />
+-Dkaraf.startLocalConsole=false	<br />
 </code> 
 
   - 修改端口 etc/nexus.properties
 
 <code>
-application-port=8964
-application-host=0.0.0.0
+application-port=8964<br />
+application-host=0.0.0.0<br />
 </code>  
 
 ## 编写Nexus 服务
 ### nexus.service
 
 <code>
-[Unit]
-Description=Nexus3
-After=network.target
+[Unit]<br />
+Description=Nexus3<br />
+After=network.target<br />
 
-[Service]
-Type=forking
-User=nexus
-ExecStart=/opt/nexus/nexus3/bin/nexus start
-ExecReload=/opt/nexus/nexus3/bin/nexus force-reload
-ExecStop=/opt/nexus/nexus3/bin/nexus stop
-ExecRestart=/opt/nexus/nexus3/bin/nexus restart
+[Service]<br />
+Type=forking<br />
+User=nexus<br />
+ExecStart=/opt/nexus/nexus3/bin/nexus start<br />
+ExecReload=/opt/nexus/nexus3/bin/nexus force-reload<br />
+ExecStop=/opt/nexus/nexus3/bin/nexus stop<br />
+ExecRestart=/opt/nexus/nexus3/bin/nexus restart<br />
 
-[Install]
-WantedBy=multi-user.target
+[Install]<br />
+WantedBy=multi-user.target<br />
 
 </code>
 
