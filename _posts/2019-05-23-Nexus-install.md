@@ -83,31 +83,36 @@ application-host=0.0.0.0<br />
 ### nexus.service
 
 <code>
-[Unit]<br />
-Description=Nexus3<br />
-After=network.target<br />
 
-[Service]<br />
-Type=forking<br />
-User=nexus<br />
+[Unit]<br/>
+Description=Nexus3<br/>
+After=network.target<br/>
+
+[Service]<br/>
+Type=forking<br/>
+User=nexus<br/>
 ExecStart=/opt/nexus/nexus3/bin/nexus start<br />
 ExecReload=/opt/nexus/nexus3/bin/nexus force-reload<br />
 ExecStop=/opt/nexus/nexus3/bin/nexus stop<br />
 ExecRestart=/opt/nexus/nexus3/bin/nexus restart<br />
 
 [Install]<br />
-WantedBy=multi-user.target<br />
+WantedBy=multi-user.target<br/>
 
 </code>
 
+  - 建立软链接 
+`ln -s /opt/nexus/nexus.service /usr/lib/systemd/system/nexus.service`
+
+### 安装启动
+
+  sudo systemctl enable nexus.service
+
+
 <html>
-<p class="section-indent">
-</p>
-<img src="">
-<p class="section-indent">
-</p>
-<img src="">
+
 <a href="https://blog.csdn.net/qq_26975307/article/details/89173409">sublime 小福利</a>
+
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
 	<div class="pull-right">
 		<a href="https://lanbery.github.io/about" target="self" class="copyright-link">
