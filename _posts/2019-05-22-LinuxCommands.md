@@ -13,6 +13,10 @@ tags:
 
 ## Centos Commands
 
+### 系统命令
+  uname -n -r -p -o
+  查询系统信息
+
 ### scp 命令
   scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
            [-l limit] [-o ssh_option] [-P port] [-S program]
@@ -40,7 +44,14 @@ tags:
 	scp [-r]  remote_user@remote_ip:remote_folder/xxx.file[copy_folder] /opt/recv_folder/	
 </code>
 
-
+<hr/>
+<p class="section-indent">
+	磁盘查询命令
+</p>
+<code json>
+	df -h
+	df -h /usr //指定目录	
+</code>
 <hr/>
 
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
