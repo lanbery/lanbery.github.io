@@ -1,17 +1,19 @@
 ---
 layout:     post
-title:      IPFS协议层深入分析
-subtitle:   路由层协议
-date:       2018-07-11
-author:     西二旗李老师
-header-img: img/post-bg-hacker.jpg
+title:      Nexus 私服安装配置（一）
+subtitle:   Centos7 安装 nexus3
+date:       2019-05-23
+author:     lanbery
+header-img: img/tag-lambor-orange.png
 catalog: true
 tags:
-    - IPFS
-    - Block Chain	
+    - Nexus	
 ---
 
-## 前言
+# Nexus
+
+
+
 <html>
 <p class="section-indent">
 </p>
