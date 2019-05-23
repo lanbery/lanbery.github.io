@@ -11,6 +11,7 @@ tags:
 ---
 
 # Nexus
+mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服务器， Nexus 被超过10万个开发团队所使用。
 
 <a href="https://sonatype-download.global.ssl.fastly.net/repository/repositoryManager/3/nexus-3.16.1-02-unix.tar.gz" >
 下载Nexus-3.16.1 unix
