@@ -109,7 +109,7 @@ WantedBy=multi-user.target<br/>
   sudo systemctl enable nexus.service
 
 
-<html>
+
 ## 关于配置过程中的问题
  - File Descriptiors
 
@@ -132,7 +132,10 @@ WantedBy=multi-user.target<br/>
    删除工作目录（sonatype-work/nexus3/）中生成文件【原始文件:log,orient,tmp,clean_cache】之外其他文件和目录，重启解决。
 </p>  
 ![status](https://lanbery.github.io/docs/images/2019/2019-05-23_17-30-32.png?raw=true&width=600)
+
 <hr/>
+
+<html>
 <a href="https://blog.csdn.net/qq_26975307/article/details/89173409">sublime 小福利</a>
 
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
