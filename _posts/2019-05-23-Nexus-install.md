@@ -11,10 +11,16 @@ tags:
 ---
 
 # Nexus
+![Nexus](https://www.sonatype.com/hs-fs/hubfs/SON_logo_main@2x%20copy%20trimmed.png?width=165&name=SON_logo_main@2x%20copy%20trimmed.png)
+<p class="section-indent">
 mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服务器， Nexus 被超过10万个开发团队所使用。
-<a href="https://sonatype-download.global.ssl.fastly.net/repository/repositoryManager/3/nexus-3.16.1-02-unix.tar.gz" >
-下载Nexus-3.16.1 unix
-</a>
+	<a href="https://sonatype-download.global.ssl.fastly.net/repository/repositoryManager/3/nexus-3.16.1-02-unix.tar.gz" >
+	下载Nexus-3.16.1 unix
+	</a>
+</p>
+
+
+
 
 ## 准备工作
   - java 环境(最好yum，不用自己配置java HOME),不详细说google
@@ -42,7 +48,7 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 
 ### 修改配置 
   - nexus.rc
-  
+
 <code>
   run_as_user="nexus"	
 </code>  
@@ -72,6 +78,26 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 application-port=8964
 application-host=0.0.0.0
 </code>  
+
+## 编写Nexus 服务
+### nexus.service
+<code>
+[Unit]
+Description=Nexus3
+After=network.target
+
+[Service]
+Type=forking
+User=nexus
+ExecStart=/opt/nexus/nexus3/bin/nexus start
+ExecReload=/opt/nexus/nexus3/bin/nexus force-reload
+ExecStop=/opt/nexus/nexus3/bin/nexus stop
+ExecRestart=/opt/nexus/nexus3/bin/nexus restart
+
+[Install]
+WantedBy=multi-user.target
+
+</code>
 
 <html>
 <p class="section-indent">
