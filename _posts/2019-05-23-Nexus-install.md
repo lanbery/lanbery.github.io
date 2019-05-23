@@ -110,7 +110,29 @@ WantedBy=multi-user.target<br/>
 
 
 <html>
+## 关于配置过程中的问题
+ - File Descriptiors
 
+<p class="section-indent">
+	在 /etc/security/lim	its.conf 中增加<br>
+    nexus	hard nofile 65536 <br>	
+    nexus   soft nofile 65536 <br>
+    nexus 为用户name，可以用 * 代表所有人
+</p>	
+<p>
+然后，编辑 nexus-sysctl.conf,内容为： vm.max_map_count=65536
+<br>
+在 /etc/sysctl.d 建立软链接
+<br>重启 reboot
+</p>
+
+  - database frozen 问题解决
+
+<p >
+   删除工作目录（sonatype-work/nexus3/）中生成文件【原始文件:log,orient,tmp,clean_cache】之外其他文件和目录，重启解决。
+</p>  
+![status](https://lanbery.github.io/docs/images/2019/2019-05-23_17-30-32.png?raw=true&width=600)
+<hr/>
 <a href="https://blog.csdn.net/qq_26975307/article/details/89173409">sublime 小福利</a>
 
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
