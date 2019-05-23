@@ -12,7 +12,9 @@ tags:
 
 # Nexus
 
-
+<a href="https://sonatype-download.global.ssl.fastly.net/repository/repositoryManager/3/nexus-3.16.1-02-unix.tar.gz" >
+下载Nexus-3.16.1 unix
+</a>
 
 <html>
 <p class="section-indent">
