@@ -41,19 +41,19 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 
   - user
 
- <code command>
+`
  sudo useradd nexus
 
  sudo chown -R /opt/nexus
  sudo chown -R /work/nexus
- </code> 
+`
 
 ### 修改配置 
   - nexus.rc
 
-<code>
+`
   run_as_user="nexus"	
-</code>  
+` 
 
   - nexus.vmoptions
 
