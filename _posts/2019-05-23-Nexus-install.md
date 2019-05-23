@@ -27,6 +27,7 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
   - Nexus tar [curl or wget]
 ### Nexus 目录及用户
   - Folder
+
 <code command>
 	cd /opt
 	wget https://****/nexus-3.16-*.tar.gz	
@@ -37,7 +38,9 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 	ln -s nexus-3.16 nexus3 //最好建软链接,方便管理
 	mv sonatype-work /work/nexus/sonatype-work //移到较大的挂载盘上
 </code>  
+
   - user
+
  <code command>
  sudo useradd nexus
 
@@ -53,6 +56,7 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 </code>  
 
   - nexus.vmoptions
+
 <code>
 -Xms1200M
 -Xmx1200M
@@ -73,6 +77,7 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 </code> 
 
   - 修改端口 etc/nexus.properties
+
 <code>
 application-port=8964
 application-host=0.0.0.0
@@ -80,6 +85,7 @@ application-host=0.0.0.0
 
 ## 编写Nexus 服务
 ### nexus.service
+
 <code>
 [Unit]
 Description=Nexus3
