@@ -74,8 +74,8 @@ tags:
 </code>
 
 ### chown 和 chmod 命令下
-   chown 改变目录所属权，在ubuntu下注意，带上用户组[sudo chown -R user:usergrp ** ]
-   chmod 修改操作权限
+	chown 改变目录所属权，在ubuntu下注意，带上用户组[sudo chown -R user:usergrp ** ]
+	chmod 修改操作权限
 
 
 <hr/>
