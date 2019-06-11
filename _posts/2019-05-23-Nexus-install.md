@@ -25,6 +25,7 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
   - java 环境(最好yum，不用自己配置java HOME),不详细说google
   - Nexus 安装目录及用户
   - Nexus tar [curl or wget]
+  
 ### Nexus 目录及用户
   - Folder
 
@@ -118,13 +119,19 @@ WantedBy=multi-user.target<br/>
     nexus	hard nofile 65536 <br>	
     nexus   soft nofile 65536 <br>
     nexus 为用户name，可以用 * 代表所有人
-</p>	
-<p>
-然后，编辑 nexus-sysctl.conf,内容为： vm.max_map_count=65536
-<br>
-在 /etc/sysctl.d 建立软链接
-<br>重启 reboot
 </p>
+
+	检测设置多大合适的命令：
+	grep -r MemTotal /proc/meminfo | awk '{printf("%d",$2/10)}'
+	然后，编辑 nexus-sysctl.conf,内容为： vm.max_map_count=65536
+	在 /etc/sysctl.d 建立软链接
+
+	重启 reboot 或 sysctl -p
+
+	查看验证：
+
+	su - httpd
+	sysctl fs.file-max
 
   - database frozen 问题解决
 
