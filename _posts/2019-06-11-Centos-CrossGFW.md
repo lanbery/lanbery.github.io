@@ -11,11 +11,49 @@ tags:
     - SS	
 ---
 
-## yum 列出源
+## yum 基礎Commands
   yum repolist all 
+  yum update
+  yum list install | grep python-pip 查詢是否安裝
+  yum remove python-pip
 
-https://dev.mysql.com/downloads/file/?id=484922
 
+### 安裝相關軟體程式
+  - yum install epel-release
+  - yum install python-pip
+
+####  shadows 配置設置
+  /etc/shadowsocks/shadowsocks.json
+
+<code json>
+  {
+  	"server":"xx.x.x.x",
+  	"server_port":38964,
+	...
+  }
+</code>  
+
+  Service Shell brokk.service
+
+<code json>
+  [Unit]
+  Description=brokk
+  [Service]
+  TimeoutStartSec=0
+  ExecStart=/usr/bin/sslocal -c /etc/shadowsocks/brokk.json
+  [Install]
+  WantedBy=multi-user.target
+</code> 
+
+  systemctl enable  brokk.service
+
+#### pip 
+  /etc/privoxy/config
+
+<code json>
+  listen-address 127.0.0.1:8118
+  forward-socks5t / 127.0.0.1:1080
+</code>  
 
 <html>
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
