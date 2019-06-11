@@ -4,7 +4,7 @@ title:      Centos7 安装Mysql
 subtitle:   
 date:       2019-06-10
 author:     lanbery
-header-img: img/post-bg-hacker.jpg
+header-img: img/about-header-lambor-yellow.png
 catalog: true
 tags:
     - tech-wiki
