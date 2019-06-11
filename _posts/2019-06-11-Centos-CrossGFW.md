@@ -36,13 +36,13 @@ tags:
   Service Shell brokk.service
 
 <code json>
-  [Unit]
-  Description=brokk
-  [Service]
-  TimeoutStartSec=0
-  ExecStart=/usr/bin/sslocal -c /etc/shadowsocks/brokk.json
-  [Install]
-  WantedBy=multi-user.target
+    [Unit]
+    Description=brokk
+    [Service]
+    TimeoutStartSec=0
+    ExecStart=/usr/bin/sslocal -c /etc/shadowsocks/brokk.json
+    [Install]
+    WantedBy=multi-user.target
 </code> 
 
   systemctl enable  brokk.service
