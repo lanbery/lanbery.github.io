@@ -4,7 +4,7 @@ title:      Nexus 私服安装配置（一）
 subtitle:   Centos7 配置 nexus3
 date:       2019-05-23
 author:     lanbery
-header-img: img/tag-lambor-orange.png
+header-img: img/tag-header-cars.jpg
 catalog: true
 tags:
     - Nexus	
