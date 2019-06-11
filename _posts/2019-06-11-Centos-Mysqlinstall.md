@@ -10,6 +10,8 @@ tags:
     - tech-wiki
     - Mysql	
 ---
+## yum 列出源
+  yum repolist all 
 
 https://dev.mysql.com/downloads/file/?id=484922
 
