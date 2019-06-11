@@ -24,6 +24,8 @@ tags:
 
   yum-config-manager --disable MySQL 8.0 Community Server
 
+  注：没有yum-config-* 命令可 yum install yum-utils
+
 OR
   edit  /etc/yum.repos.d/mysql-community configurations
 
@@ -43,11 +45,34 @@ OR
   grep 'temporary password' /var/log/mysqld.log
   Get the root local password
 
-![detail](https://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/)
+`[detail](https://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/)`
 
+  ALTER USER 'root'@'localhost' IDENTIFIED BY 'clg*896430TH';
 
+### 密碼配置策略
+  修改root密碼後才能，查看或修改密碼策略。
 
+  show variables like '%password%';
 
+  Set GLOBAL {tag_label}={value}
+
+## 配置my.cnf
+  [client]
+  port=8964
+  default-character-set = utf8mb4
+  [mysqld]
+  max_connections=500
+  # set pwd expireed no
+  default_password_lifetime=0
+  character_set_server=utf8mb4
+  validate_password_length=6
+  validate_password_mixed_case_count=0
+  validate_password_policy=LOW
+
+## 授權
+  grant SELECT, INSERT, UPDATE, DELETE, EXECUTE, SHOW VIEW ON *.* TO 'dev'@'%' identified by 'dev!123';
+
+  flush privileges;
 
 
 <html>
