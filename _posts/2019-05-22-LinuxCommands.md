@@ -42,6 +42,7 @@ tags:
   scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
            [-l limit] [-o ssh_option] [-P port] [-S program]
            [[user@]host1:]file1 ... [[user@]host2:]file2
+
 <p class="section-indent">
 	复制本地文件到远程
 </p>
@@ -77,9 +78,12 @@ tags:
 	chown 改变目录所属权，在ubuntu下注意，带上用户组[sudo chown -R user:usergrp ** ]
 	chmod 修改操作权限
 
-
 <hr/>
+## Centos7 Commands
 
+### yum list install
+  列出已安装软件
+  yum list install |grep ssl
 
 
 
