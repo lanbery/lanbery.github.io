@@ -18,6 +18,7 @@ tags:
   yum remove python-pip
 
 
+
 ### 安裝相關軟體程式
   - yum install epel-release
   - yum install python-pip
