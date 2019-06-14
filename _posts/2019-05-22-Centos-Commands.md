@@ -23,6 +23,10 @@ tags:
 ## ll /proc/[pid] 查看进程信息
 top 
 
+### yum list install
+  列出已安装软件
+  yum list install |grep ssl
+
 ## 制作启动脚本
 
 ## 磁盘查询命令
