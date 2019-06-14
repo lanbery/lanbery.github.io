@@ -59,6 +59,17 @@ tags:
   验证：
   curl --socks5 127.0.0.1:1080 http://httpbin.org/ip
 
+## VPS Network Test
+  wget -qO- git.io/superbench.sh | bash
+
+  ./superbench.sh info
+
+  ./superbench.sh io
+
+  ./superbench.sh speed
+
+  ./superbench.sh share
+
 <html>
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
 	<div class="pull-right">
