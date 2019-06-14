@@ -85,6 +85,14 @@ tags:
   列出已安装软件
   yum list install |grep ssl
 
+# System Level Commands
+## su
+  su username 切换到用户
+
+## ssh-keygen 
+	ssh-keygen -t rsa -C "xxx"
+
+	chmod 644 id_rsa
 
 
 <html>

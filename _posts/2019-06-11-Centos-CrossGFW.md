@@ -56,6 +56,9 @@ tags:
   forward-socks5t / 127.0.0.1:1080
 </code>  
 
+  验证：
+  curl --socks5 127.0.0.1:1080 http://httpbin.org/ip
+
 <html>
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
 	<div class="pull-right">
