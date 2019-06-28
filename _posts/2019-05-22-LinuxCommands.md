@@ -79,6 +79,16 @@ tags:
 	chmod 修改操作权限
 
 <hr/>
+
+-----
+
+## 权限
+### stat -c %a **.* 
+	查看文件权限数值
+
+###  chmod 700 xx.txt
+	授权	
+
 ## Centos7 Commands
 
 ### yum list install
