@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Centos7 安装SS
-subtitle:   
+subtitle:   穿越火线
 date:       2019-06-11
 author:     lanbery
 header-img: img/post-bg-mma-4.jpg
@@ -34,19 +34,19 @@ tags:
   }
 </code>  
 
-  Service Shell brokk.service
+  Service Shell sscs.service
 
 <code json>
     [Unit]
-    Description=brokk
+    Description=sscs
     [Service]
     TimeoutStartSec=0
-    ExecStart=/usr/bin/sslocal -c /etc/shadowsocks/brokk.json
+    ExecStart=/usr/bin/sslocal -c /etc/shadowsocks/sscs.json
     [Install]
     WantedBy=multi-user.target
 </code> 
 
-  systemctl enable  brokk.service
+  systemctl enable  sscs.service
 
 #### pip 
   /etc/privoxy/config
