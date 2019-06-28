@@ -73,16 +73,16 @@ tags:
 	df -h
 	df -h /usr //指定目录	
 </code>
+-----
 
+## 权限
 ### chown 和 chmod 命令下
 	chown 改变目录所属权，在ubuntu下注意，带上用户组[sudo chown -R user:usergrp ** ]
 	chmod 修改操作权限
 
 <hr/>
 
------
 
-## 权限
 ### stat -c %a **.* 
 	查看文件权限数值
 
