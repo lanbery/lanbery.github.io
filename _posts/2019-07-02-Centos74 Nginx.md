@@ -55,7 +55,7 @@ install Prebuilt
 
 # nginx Basic Help
 	nginx -V 查看Nginx 配置以及加載的模塊
-	  
+
 
 
 ## Deploy Setting
@@ -71,7 +71,7 @@ chown -R nginx:nginx /data/nginx
 ## Nginx start config
 
 nginx -c /*/*.conf
-nginx -t reload 重載配置
+nginx -t 測試配置
 nginx -s stop 
 nginx -s [reload/quit/stop]優雅的停止nginx用quit
 
