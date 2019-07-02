@@ -54,7 +54,8 @@ install Prebuilt
   - verify: curl -I 127.0.0.1 
 
 # nginx Basic Help
-	nginx -v  
+	nginx -V 查看Nginx 配置以及加載的模塊
+	  
 
 
 ## Deploy Setting
@@ -65,6 +66,24 @@ chown -R nginx:nginx /data/nginx
 
 
 ## Nginx Config
+
+
+## Nginx start config
+
+nginx -c /*/*.conf
+nginx -t reload 重載配置
+nginx -s stop 
+nginx -s [reload/quit/stop]優雅的停止nginx用quit
+
+
+
+----
+# Issue 解決
+
+
+##  directory index of "/***" is forbidden 403
+
+   ps -aux|grep nginx 查看工作進程的權限
 
 
 
