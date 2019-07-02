@@ -115,3 +115,6 @@ tar -zcvf /data/xxx.ca.tar.gz /usr/www
   將文件夾www 打包到 /data/下
 
 tar -xzf xxx.ca.tar.gz
+
+### 解壓指定到文件夾
+  tar -zxvf **.gz -C /etc/xx/
