@@ -11,6 +11,27 @@ tags:
     - Web	
 ---
 
-> Nginx
+> Nginx Install [yum or source install]
 
-# SSL
+# nginx install
+
+yum install nginx
+
+or
+
+install Prebuilt
+  modify or create the repos profile: [/etc/yum.repos.d/nginx.repo]
+
+<code commands>
+  name=nginx repo
+  baseurl=https://nginx.org/packages/mainline/<OS>/<OSRELEASE>/$basearch/
+  gpgcheck=0
+  enabled=1
+</code> 
+
+  - update repos : yum update
+  - install: yum install nginx
+  - verify: curl -I 127.0.0.1 
+
+# nginx Basic Help
+	nginx -v  
