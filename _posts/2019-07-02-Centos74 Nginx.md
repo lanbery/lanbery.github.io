@@ -42,18 +42,19 @@ or
 install Prebuilt
   modify or create the repos profile: [/etc/yum.repos.d/nginx.repo]
 
-<code commands>
+
   name=nginx repo
   baseurl=https://nginx.org/packages/mainline/<OS>/<OSRELEASE>/$basearch/
   gpgcheck=0
   enabled=1
-</code> 
+
 
   - update repos : yum update
   - install: yum install nginx
   - verify: curl -I 127.0.0.1 
 
 # nginx Basic Help
+
 	nginx -V 查看Nginx 配置以及加載的模塊
 
 
@@ -70,10 +71,10 @@ chown -R nginx:nginx /data/nginx
 
 ## Nginx start config
 
-nginx -c /*/*.conf
-nginx -t 測試配置
-nginx -s stop 
-nginx -s [reload/quit/stop]優雅的停止nginx用quit
+  nginx -c /*/*.conf
+  nginx -t 測試配置
+  nginx -s stop 
+  nginx -s [reload/quit/stop]優雅的停止nginx用quit
 
 
 
