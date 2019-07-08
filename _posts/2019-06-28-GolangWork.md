@@ -23,6 +23,7 @@ tags:
   tar -C /usr/local -xzf go1.12.6.linux-amd64.tar.gz
 
 ### 配置
+
   vim /etc/profile.d/go-env.sh
 
   export IPFS_PATH=/data/.ipfs
@@ -36,7 +37,7 @@ tags:
 验证：go env
 
 ----
-  
+
 
 
 
