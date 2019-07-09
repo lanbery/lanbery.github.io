@@ -29,7 +29,7 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 ### Nexus 目录及用户
   - Folder
 
-<code command>
+
 	cd /opt <br />
 	wget https://*/**/nexus-3.16-*.tar.gz	<br />
 	mkdir nexus <br />
@@ -38,7 +38,7 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 	cd nexus  <br />
 	ln -s nexus-3.16 nexus3 //最好建软链接,方便管理  <br />
 	mv sonatype-work /work/nexus/sonatype-work //移到较大的挂载盘上  <br />
-</code>  
+ 
 
   - user
 

@@ -118,3 +118,11 @@ tar -xzf xxx.ca.tar.gz
 
 ### 解壓指定到文件夾
   tar -zxvf **.gz -C /etc/xx/
+
+## zip  
+
+  - 把 /data 下 web 压缩成 web.zip  
+
+  cd /data/web
+  zip -r web.zip web --exclude *.git*  // 排除 .git
+  
