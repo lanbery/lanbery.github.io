@@ -73,6 +73,17 @@ tags:
 	df -h
 	df -h /usr //指定目录	
 </code>
+
+
+### cp 命令
+
+	cp -rf [source:file/folder] [target:folder] 
+
+	Centos cp 前加反斜杠，不提示覆盖
+
+	\cp -rf aaa.x ./da
+
+
 -----
 
 ## 权限
