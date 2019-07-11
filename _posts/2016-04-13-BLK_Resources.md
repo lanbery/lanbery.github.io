@@ -26,3 +26,6 @@ tags:
 
 ## Web3js API
 [Web3js](https://web3js.readthedocs.io/en/1.0/index.html)
+
+### Java Spring boot
+[](https://github.com/ityouknow/spring-boot-examples/tree/master/spring-boot-thymeleaf)
