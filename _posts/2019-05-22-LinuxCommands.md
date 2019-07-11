@@ -134,6 +134,9 @@ tags:
   --help : 显示辅助说明
   --version : 显示版本
 
+  *修改软链接*
+  ln -snf 源 目标
+
 
 <html>
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
