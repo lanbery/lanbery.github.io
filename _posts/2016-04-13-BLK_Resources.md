@@ -8,8 +8,9 @@ header-img: img/post-bg-os-metro.jpg
 catalog: true
 tags:
     - blockchain
-	
+    
 ---
+
 > 收集有用的资源
 > 
 
@@ -21,11 +22,13 @@ tags:
 
 [申请测试以太币](https://faucet.ropsten.be)
 
-## 
+## Ethereum
+
 [etherscan](https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52#writeContract)
 
 ## Web3js API
 [Web3js](https://web3js.readthedocs.io/en/1.0/index.html)
+
 
 ## Infura
 [infura docs](https://docs.web3j.io/infura.html)
@@ -42,3 +45,10 @@ tags:
 
 https://github.com/9992800/Dapp-on-Ethereum/blob/master/chapter-6/lottery/app/src/index.js
 https://github.com/sofanetwork/smartContract
+
+
+# JAVA
+## Java Spring boot
+
+[spring boot](https://github.com/ityouknow/spring-boot-examples/tree/master/spring-boot-thymeleaf)
+
