@@ -26,3 +26,19 @@ tags:
 
 ## Web3js API
 [Web3js](https://web3js.readthedocs.io/en/1.0/index.html)
+
+## Infura
+[infura docs](https://docs.web3j.io/infura.html)
+
+
+## Solidity 
+[Solidity 0.5.9 Docs](https://learnblockchain.cn/docs/solidity/)
+
+## Build Blockchain
+[How to Build Blockchain](http://www.dappuniversity.com/articles/blockchain-app-tutorial)
+
+
+## Demo
+
+https://github.com/9992800/Dapp-on-Ethereum/blob/master/chapter-6/lottery/app/src/index.js
+https://github.com/sofanetwork/smartContract
