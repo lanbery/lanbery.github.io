@@ -16,7 +16,8 @@ tags:
 ----
 ## 基于Bootstrap 的UI
 
-[Pixelkit展示页](http://pixelkit.com/free-ui-kits/vanilla-cream/index.html)
+![GitHub followers](https://img.shields.io/github/followers/lanbery.svg?style=social)
 
-[Github-Pixelkit](![GitHub followers](https://img.shields.io/github/followers/lanbery.svg?style=social))
-<a href="https://github.com/Pixelkit/PixelKit-Bootstrap-UI-Kits" target="">Github-Pixelkit</a>
+<a href="http://pixelkit.com/free-ui-kits/vanilla-cream/index.html" target="_PixelkitDemo">Pixelkit展示页</a>
+
+<a href="https://github.com/Pixelkit/PixelKit-Bootstrap-UI-Kits" target="_Pixelkit">Github-Pixelkit</a>
