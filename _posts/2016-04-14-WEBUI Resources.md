@@ -18,4 +18,5 @@ tags:
 
 [Pixelkit展示页](http://pixelkit.com/free-ui-kits/vanilla-cream/index.html)
 
-[Github-Pixelkit](https://github.com/Pixelkit/PixelKit-Bootstrap-UI-Kits/)
+[Github-Pixelkit](![GitHub followers](https://img.shields.io/github/followers/lanbery.svg?style=social))
+<a href="https://github.com/Pixelkit/PixelKit-Bootstrap-UI-Kits" target="">Github-Pixelkit</a>
