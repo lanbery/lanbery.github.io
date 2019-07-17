@@ -49,4 +49,4 @@ tags:
  	host: "127.0.0.1",     // Localhost (default: none)
  	port: 7545,            // 与Ganache Server 一致
  	network_id: "*",       // Any network (default: none)
-  },
+  }
