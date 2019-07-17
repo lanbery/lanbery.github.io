@@ -37,16 +37,16 @@ tags:
 
 ### deploy_contract.js
 
-  var First = artifacts.require('First.sol');
+	var First = artifacts.require('First.sol');
 
-  module.exports = function(deployer){
-	deployer.deploy(First);
-  };  
+	module.exports = function(deployer){
+		deployer.deploy(First);
+	};  
 
 ### truffle-config.js 
 
-  development: {
- 	host: "127.0.0.1",     // Localhost (default: none)
- 	port: 7545,            // 与Ganache Server 一致
- 	network_id: "*",       // Any network (default: none)
-  }
+	development: {
+		host: "127.0.0.1",     // Localhost (default: none)
+		port: 7545,            // 与Ganache Server 一致
+		network_id: "*",       // Any network (default: none)
+	}
