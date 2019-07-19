@@ -21,3 +21,11 @@ tags:
 <a href="http://pixelkit.com/free-ui-kits/vanilla-cream/index.html" target="_PixelkitDemo">Pixelkit展示页</a>
 
 <a href="https://github.com/Pixelkit/PixelKit-Bootstrap-UI-Kits" target="_Pixelkit">Github-Pixelkit</a>
+
+
+## Node 
+
+<a href="https://bower.io/" target="bower">bower</a>
+
+### lite server
+<a href="https://github.com/txchen/light-server" target="lite-server">lite-server</a><br/>

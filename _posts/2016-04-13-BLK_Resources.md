@@ -56,3 +56,8 @@ https://github.com/sofanetwork/smartContract
 ### Pet-shop
 [Pet-shop](https://learnblockchain.cn/2018/01/12/first-dapp/)
 
+
+
+## DAG
+<a href="https://xdag.io/zh/" target="dag">DAG</a>
+
