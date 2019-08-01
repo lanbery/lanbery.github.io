@@ -50,4 +50,40 @@ tags:
   - git merge tmp							//用tmp 合并本地当前分支
   - git branch -d tmp 						//删除本地临时分支
 
+## Git Submodule 子模块
+### add Submodule
+git submodule add <url> <path>
+
+  url为子模块的路径，path为该子模块存储的目录路径
+  git status会看到项目中修改了.gitmodules
+  git diff --cached查看修改内容可以看到增加了子模块
+
+### 子模块的使用
+
+  git submodule init
+  git submodule update
+
+  git submodule update --init --recursive
+
+### 子模块的更新
+  进入到子模块目录下，执行 git pull更新，查看git log查看相应提交
+
+### 删除子模块
+
+  - rm -rf 子模块目录 删除子模块目录及源码
+  - vi .gitmodules 删除项目目录下.gitmodules文件中子模块相关条目
+  - vi .git/config 删除配置项中子模块相关条目
+  - rm .git/module/* 删除模块下的子模块目录，每个子模块对应一个目录，注意只删除对应的子模块目录即可
+
+-----
+
+
+
+
+
+
+ 
+
+
+
 

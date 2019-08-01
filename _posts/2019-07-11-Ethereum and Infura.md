@@ -21,4 +21,15 @@ tags:
 
 
 ## 部署合约
+
+web3.eth.sendTransaction({
+from:'0x6cf8b6982e7d7a9552e50d824624b5fc2b7fca40',
+to:'0x9f00F4735b8032be2Ba59AFDaB1613957ba08e5d',
+value:'50000000000000000',
+gasPrice:'2'},function(err,result){
+	if(err){console.log(err);}
+	else{
+		
+    }
+});
    
