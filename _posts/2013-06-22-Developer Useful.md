@@ -2,7 +2,7 @@
 layout:     post
 title:      开发工具Git
 subtitle:   随着年龄增长脑子越来越不好使了...
-date:       2013-05-22
+date:       2016-05-22
 author:     lanbery
 header-img: img/post-bg-os-metro.jpg
 catalog: true
