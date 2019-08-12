@@ -128,7 +128,9 @@ centos7 之后默认防火墙为firewall
 > firewall-cmd --zone=public --add-port=80/tcp --permanent
 
   – zone 作用域
+
   – add-port=8080/tcp 添加端口，格式为：端口/通讯协议
+  
   – permanent #永久生效，没有此参数重启后失效
 
 > 在指定区域开启某个范围的端口号(如18881~65534，命令方式)
