@@ -76,8 +76,11 @@ install Prebuilt
 ## Nginx start config
 
   nginx -c /*/*.conf
+
   nginx -t 測試配置
+
   nginx -s stop 
+
   nginx -s [reload/quit/stop]優雅的停止nginx用quit
 
 
@@ -92,5 +95,43 @@ install Prebuilt
    ps -aux|grep nginx 查看工作進程的權限
 
 
+----
+# Centos 防火墙
 
+> Centos firewall 
+
+centos7 之后默认防火墙为firewall
+
+## 查看firewall
+
+  systemctl status/start/stop/enable/disable firewalld
+
+  配置文件在: /etc/firewalld/
+
+### firewall-cmd 命令
+
+> firewall-cmd
+
+  - [--version]
+  - [--help]
+  - [--get-active-zones] 查看区域信息
+  - [--get-zone-of-interface=eth0] 查看指定接口所属区域信息
+
+> firewall-cmd --reload 重启防火墙
+
+### 查看指定区域所有开启的端口号
+
+  firewall-cmd --zone=public --list-ports
+
+### 开放端口
+
+> firewall-cmd --zone=public --add-port=80/tcp --permanent
+
+  – zone 作用域
+  – add-port=8080/tcp 添加端口，格式为：端口/通讯协议
+  – permanent #永久生效，没有此参数重启后失效
+
+> 在指定区域开启某个范围的端口号(如18881~65534，命令方式)
+
+  firewall-cmd --zone=public --add-port=18881:65534/tcp --permanent
 
