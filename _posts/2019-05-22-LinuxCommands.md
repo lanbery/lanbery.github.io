@@ -38,6 +38,13 @@ tags:
 
 	# crontab -l #查看计划任务
 
+----
+### 计划任务
+
+> 创建定时任务
+
+
+
 ### scp 命令
   scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
            [-l limit] [-o ssh_option] [-P port] [-S program]
@@ -133,8 +140,6 @@ tags:
 
 #### 查看用户组
 
-
-
 -----
 
 ## 权限
@@ -146,8 +151,9 @@ tags:
 <hr/>
 
 
-### stat -c %a **.* 
-	查看文件权限数值
+### 查看文件权限数值
+  
+  stat -c %a **.* 	
 
 ###  chmod 700 xx.txt
 	授权	
