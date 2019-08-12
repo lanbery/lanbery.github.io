@@ -101,6 +101,7 @@ tags:
 
 ### 用户添加
 > useradd [options] username
+
 > options 
 
   - c comment
@@ -118,17 +119,20 @@ tags:
 
 
 ### 删除账号
+
   userdel -r sam 
   常用的选项是 -r ，它的作用是把用户的主目录一起删除 
 
 ### 用户组
 
   groupadd [name] 增加
+
   groupmod -n test2 test  将test改成test2
+  
   groupdel test2 删除
 
 #### 查看用户组
-   
+
 
 
 -----
