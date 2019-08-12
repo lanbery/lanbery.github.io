@@ -64,13 +64,11 @@ install Prebuilt
 
 ## Deploy Setting
 ### mkdir folder
-<code shell>
+
   mkdir /data/nginx /data/nginx/www
-
   chown -R root:root /data/nginx
-
   chown -R nginx:nginx /data/nginx
-</code>
+
 
 ## Nginx Config
 
