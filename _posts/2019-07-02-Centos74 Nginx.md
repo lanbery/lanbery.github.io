@@ -35,6 +35,8 @@ DNS查询有两种方式：
 ----
 # nginx install
 
+[Nginx Install](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
+
 yum install nginx
 
 or
