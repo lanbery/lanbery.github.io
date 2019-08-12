@@ -40,6 +40,7 @@ yum install nginx
 or
 
 install Prebuilt
+
   modify or create the repos profile: [/etc/yum.repos.d/nginx.repo]
 
 
@@ -61,9 +62,10 @@ install Prebuilt
 
 ## Deploy Setting
 ### mkdir folder
-mkdir /data/nginx /data/nginx/www
-chown -R root:root /data/nginx
-chown -R nginx:nginx /data/nginx
+
+  mkdir /data/nginx /data/nginx/www
+  chown -R root:root /data/nginx
+  chown -R nginx:nginx /data/nginx
 
 
 ## Nginx Config
@@ -82,7 +84,8 @@ chown -R nginx:nginx /data/nginx
 # Issue 解決
 
 
-##  directory index of "/***" is forbidden 403
+## directory index of "/***" is forbidden 403
+
 
    ps -aux|grep nginx 查看工作進程的權限
 
