@@ -135,3 +135,6 @@ centos7 之后默认防火墙为firewall
 
   firewall-cmd --zone=public --add-port=18881:65534/tcp --permanent
 
+> telnet 测试
+
+  windows 开启telnet ： 开始　→　控制面板　→　程序和功能　→　打开或关闭Windows功能
