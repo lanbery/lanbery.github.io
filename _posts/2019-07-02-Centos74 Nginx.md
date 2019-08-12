@@ -91,10 +91,11 @@ install Prebuilt
 # Issue 解決
 
 
-## directory index of "/***" is forbidden 403
+##  forbidden 403
 
+  directory index of "/***" is forbidden 403
 
-   ps -aux|grep nginx 查看工作進程的權限
+  ps -aux|grep nginx 查看工作進程的權限
 
 
 ----
@@ -135,7 +136,9 @@ centos7 之后默认防火墙为firewall
 
   – permanent #永久生效，没有此参数重启后失效
 
-> 在指定区域开启某个范围的端口号(如18881~65534，命令方式)
+> 在指定区域开启某个范围的端口号
+
+  在指定区域开启某个范围的端口号(如18881~65534，命令方式)
 
   firewall-cmd --zone=public --add-port=18881:65534/tcp --permanent
 
