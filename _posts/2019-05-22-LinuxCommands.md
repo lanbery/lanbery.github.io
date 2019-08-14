@@ -38,10 +38,29 @@ tags:
 
 	# crontab -l #查看计划任务
 
+> 时区设置
+
+  ntpdate (不存在 yum install)
+
+  - 设置时区： rm -rf /etc/localtime && ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+  - 同步时间 : ntpdate 1.ro.pool.ntp.org 
+  - 定时自动执行 
+
+
+
 ----
 ### 计划任务
 
 > 创建定时任务
+
+  # Example of job definition:
+   .---------------- minute (0 - 59)
+   |  .------------- hour (0 - 23)
+   |  |  .---------- day of month (1 - 31)
+   |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+   |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+   |  |  |  |  |
+   0  1  *  *  *  [user-name] [command to be executed]
 
 
 
