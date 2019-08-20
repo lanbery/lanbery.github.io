@@ -18,6 +18,7 @@ tags:
 # Git branch
 使用Git创建本地分支，并push到远程
 
+``` bash
   - git branch -a 								//查看所有分支
   - git status									//查看状态
   - git checkout -b newBranch						//新建本地分支
@@ -25,6 +26,7 @@ tags:
   - git push --set-upstream origin sol5 		//管理本地默认推送分支，直接git push
   - git push origin :newBranch 					//通过推送空分支的方式删除远程分支
   - git push origin --delete newBranch			//删除远程分支
+```
 
 # Git merge 合并分支  
 假设要将develop 分支最新内容合并到master 分支
