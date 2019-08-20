@@ -11,6 +11,22 @@ tags:
 	  - Git
 ---
 
+> multi account
+
+``` bash
+ssh-keygen -t rsa -C "xxxx"
+
+input id_rsa
+
+```
+
+``` scripts
+~/.ssh/config
+
+ 
+
+```
+
 
 > Git Commands
 
