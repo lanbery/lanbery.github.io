@@ -65,9 +65,7 @@ install Prebuilt
 
 ## Deploy Setting
 ### mkdir folder
-```bash
-
-
+``` bash
   mkdir /data/nginx /data/nginx/www
   chown -R root:root /data/nginx
   chown -R nginx:nginx /data/nginx
@@ -98,10 +96,11 @@ install Prebuilt
 
 ##  forbidden 403
 
+``` bash
   directory index of "/***" is forbidden 403
 
   ps -aux|grep nginx 查看工作進程的權限
-
+```
 
 ----
 # Centos 防火墙
