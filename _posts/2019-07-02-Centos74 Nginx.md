@@ -46,6 +46,7 @@ install Prebuilt
   modify or create the repos profile: [/etc/yum.repos.d/nginx.repo]
 
 ``` scripts
+  [nginx]
   name=nginx repo
   baseurl=https://nginx.org/packages/mainline/<OS>/<OSRELEASE>/$basearch/
   gpgcheck=0
