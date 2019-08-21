@@ -82,14 +82,15 @@ enabled=1
 
 ## Nginx start config
 
-  nginx -c /*/*.conf
+``` bash
+nginx -c /*/*.conf
 
-  nginx -t 測試配置
+nginx -t 測試配置
 
-  nginx -s stop 
+nginx -s stop 
 
-  nginx -s [reload/quit/stop]優雅的停止nginx用quit
-
+nginx -s [reload/quit/stop]優雅的停止nginx用quit
+```
 
 
 ----
