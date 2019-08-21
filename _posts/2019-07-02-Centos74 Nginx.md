@@ -45,11 +45,12 @@ install Prebuilt
 
   modify or create the repos profile: [/etc/yum.repos.d/nginx.repo]
 
-
+``` scripts
   name=nginx repo
   baseurl=https://nginx.org/packages/mainline/<OS>/<OSRELEASE>/$basearch/
   gpgcheck=0
   enabled=1
+```  
 
 
   - update repos : yum update
@@ -64,10 +65,16 @@ install Prebuilt
 
 ## Deploy Setting
 ### mkdir folder
+```bash
+
 
   mkdir /data/nginx /data/nginx/www
   chown -R root:root /data/nginx
   chown -R nginx:nginx /data/nginx
+
+  groupadd www
+  useradd -d /data/www -m www -g www -G nginx
+```  
 
 
 ## Nginx Config

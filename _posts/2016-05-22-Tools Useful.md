@@ -9,6 +9,7 @@ catalog: true
 tags:
     - developer
 	  - Git
+    
 ---
 
 > multi account
@@ -23,7 +24,7 @@ input id_rsa
 ``` scripts
 ~/.ssh/config
 
- 
+
 
 ```
 
