@@ -29,23 +29,24 @@ mavenCentral 是最早的 maven 中央仓库,Nexus 是常用的私用 Maven 服�
 ### Nexus 目录及用户
   - Folder
 
-
-	cd /opt <br />
-	wget https://*/**/nexus-3.16-*.tar.gz	<br />
-	mkdir nexus <br />
-	tar -zxvf nexus-3.16-*.tar.gz  <br />
-	mv nexus-3.16-* nexus/nexus-3.16  <br />
-	cd nexus  <br />
-	ln -s nexus-3.16 nexus3 //最好建软链接,方便管理  <br />
-	mv sonatype-work /work/nexus/sonatype-work //移到较大的挂载盘上  <br />
- 
+```bash
+	cd /opt 
+	wget https://*/**/nexus-3.16-*.tar.gz	
+	mkdir nexus 
+	tar -zxvf nexus-3.16-*.tar.gz  
+	mv nexus-3.16-* nexus/nexus-3.16  
+	cd nexus  
+	ln -s nexus-3.16 nexus3 //最好建软链接,方便管理  
+	mv sonatype-work /work/nexus/sonatype-work //移到较大的挂载盘上  
+``` 
 
   - user
 
-`sudo useradd nexus`<br />
-`sudo chown -R /opt/nexus`<br />
-`sudo chown -R /work/nexus`<br />
-
+``` bash
+sudo useradd nexus
+sudo chown -R /opt/nexus
+sudo chown -R /work/nexus
+```
 
 ### 修改配置 
   - nexus.rc
