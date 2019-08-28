@@ -4,7 +4,7 @@ title:      WebUI
 subtitle:   资源整理
 date:       2016-04-14
 author:     lanbery
-header-img: img/post-bg-os-metro.jpg
+header-img: img/developer-guide-blog-2.png
 catalog: true
 tags:
     - WebUI
