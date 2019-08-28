@@ -48,7 +48,7 @@ install Prebuilt
 ``` scripts
 [nginx]
 name=nginx repo
-baseurl=https://nginx.org/packages/mainline/<OS>/<OSRELEASE>/$basearch/
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
 gpgcheck=0
 enabled=1
 ```  

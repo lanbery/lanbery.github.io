@@ -4,7 +4,7 @@ title:      区块链世界
 subtitle:   资源整理
 date:       2016-04-13
 author:     lanbery
-header-img: img/post-bg-os-metro.jpg
+header-img: img/developer-guide-blog-2.png
 catalog: true
 tags:
     - blockchain

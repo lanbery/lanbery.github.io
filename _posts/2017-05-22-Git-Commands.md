@@ -1,16 +1,17 @@
 ---
 layout:     post
 title:      开发工具Git
-subtitle:   随着年龄增长脑子越来越不好使了...
-date:       2016-05-22
+subtitle:   Git Commands
+date:       2017-05-22
 author:     lanbery
-header-img: img/post-bg-os-metro.jpg
+header-img: img/developer-guide-blog-2.png
 catalog: true
 tags:
     - developer
 	  - Git
     
 ---
+
 
 > multi account
 
