@@ -85,6 +85,45 @@ id
   - chown nginx:nginx www 		只修改文件夾
   - chown -R nginx:nginx 		改变文件夹及所有子文件（夹）
 
+----
+# SSH 
+
+> SSH key
+
+  AuthorizedKeysFile  .ssh/authorized_keys
+
+## 生成key
+
+```bash
+ssh-keygen -t RSA -C "name"
+
+:file_name
+
+```  
+
+## 授权
+
+```bash
+vim /etc/ssh/sshd_config
+PubkeyAuthentication yes
+AuthorizedKeysFile /root/.ssh/authorized_keys
+
+cat pubkey > /root/.ssh/authorized_keys
+
+
+
+chmod 600 authorized_keys
+
+systemctl restart sshd
+```
+
+
+
+
+
+
+----  
+
 ## 壓縮與解壓 gz
 
   yum install gzip
@@ -93,7 +132,7 @@ id
 tar 可以为文件和目录创建档案
 
   * 主选项：
-
+``` bash
   c 创建新的档案文件。如果用户想备份一个目录或是一些文件，就要选择这个选项。 
   r 把要存档的文件追加到档案文件的未尾。例如用户已经作好备份文件，又发现还有一个目录或是一些文件忘记备份了，这时可以使用该选项，将忘记的目录或文件追加到备份文件中。 
   t 列出档案文件的内容，查看已经备份了哪些文件。 
@@ -112,6 +151,7 @@ tar 可以为文件和目录创建档案
   z 用gzip来压缩/解压缩文件，加上该选项后可以将档案文件进行压缩，但还原时也一定要使用该选项进行解压缩
 
 tar -zcvf /data/xxx.ca.tar.gz /usr/www
+```
   將文件夾www 打包到 /data/下
 
 tar -xzf xxx.ca.tar.gz
