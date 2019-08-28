@@ -92,6 +92,7 @@ nginx -s stop
 nginx -s [reload/quit/stop]優雅的停止nginx用quit
 ```
 
+[Nginx Config Rule](https://my.oschina.net/foreverich/blog/800359)
 
 ----
 # Issue 解決
