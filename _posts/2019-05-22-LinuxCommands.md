@@ -109,6 +109,25 @@ tags:
 
 	\cp -rf aaa.x ./da
 
+-----
+# PS -ef
+![shotcut](https://images2017.cnblogs.com/blog/697265/201709/697265-20170918062621118-415357427.png)
+
+``` bash
+USER    用户名 
+PID    进程ID（Process ID） 
+%CPU    进程的cpu占用率 
+%MEM    进程的内存占用率 
+VSZ    进程所使用的虚存的大小（Virtual Size） 
+RSS    进程使用的驻留集大小或者是实际内存的大小，Kbytes字节。 
+TTY    与进程关联的终端（tty） 
+STAT    进程的状态：进程状态使用字符表示的（STAT的状态码）
+TIME    进程使用的总cpu时间
+COMMAND    正在执行的命令行命令 
+
+```
+
+
 
 -----
 ## 用户组，用户组
