@@ -59,6 +59,8 @@ git tag -l 'v1.0.*' # 过滤
 git tag -a v1.0.2 -m "comments"  # 新建带注释标签
 git show v1.0.2 #查看标签信息
 git log --pretty=oneline #在后期对早先的某次提交加注标签。比如此示例展示的提交历史中
+
+git push origin v1.0.2 # 上传tag到远程
 ```
 
 > 验证标签
