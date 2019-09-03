@@ -66,9 +66,10 @@ https://github.com/sofanetwork/smartContract
 > 该网站为以太坊的官方网站，有详细的以太坊介绍和各种连接地址，推荐详细看一看
 
  * <a href="https://ethereum.org/" target="ethereum">以太坊官方网站：https://ethereum.org/</a>
+
 > 该网站能全面的显示网络状态，包括节点、难度、算力等等，非常直观
 
- * <a href="https://ethstats.net/" target="ethstats"></a>  
+ * <a href="https://ethstats.net/" target="ethstats">ethstats</a>  
 
 > 该网站提供了以太坊很多应用资源，比如市场情况、合约辅助工具、已发布的智能合约、以太坊网络、DAAP等，方便开发和发布  
 
@@ -83,4 +84,5 @@ https://github.com/sofanetwork/smartContract
   * <a href="http://dapple.readthedocs.io/en/master/" target="readthedocs">readthedocs</a>
 
 > 该网站是以太坊的gitter chart的网站，根据项目分了很多房间，只要你提问题，大部分有人回答，很不错，不过只能英语交流。
+
   * <a href="https://gitter.im/orgs/ethereum/rooms" target="ethrooms">ethrooms</a>  
