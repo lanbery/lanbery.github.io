@@ -63,7 +63,24 @@ https://github.com/sofanetwork/smartContract
 
 # Ethereum Useful URL
 
-> 
+> 该网站为以太坊的官方网站，有详细的以太坊介绍和各种连接地址，推荐详细看一看
 
-  * <a href="https://ethereum.org/" target="ethereum">以太坊官方网站：https://ethereum.org/</a>   
+ * <a href="https://ethereum.org/" target="ethereum">以太坊官方网站：https://ethereum.org/</a>
+> 该网站能全面的显示网络状态，包括节点、难度、算力等等，非常直观
 
+ * <a href="https://ethstats.net/" target="ethstats"></a>  
+
+> 该网站提供了以太坊很多应用资源，比如市场情况、合约辅助工具、已发布的智能合约、以太坊网络、DAAP等，方便开发和发布  
+
+* <a href="http://ether.fund/" target="etherFund">http://ether.fund/</a> 
+
+>以太坊官方推荐开发框架Meteor说明书：https://github.com/ethereum/wiki/wiki/Dapp-using-Meteor 这个开发框架是以太坊官方推荐的，写进了以太坊的官方wiki，值得学习
+
+  * <a href="https://github.com/ethereum/wiki/wiki/Dapp-using-Meteor" target="Dapp-using-Meteor">开发框架Meteor</a>
+
+> 以太坊开发框架dapple说明书：http://dapple.readthedocs.io/en/master/ 这个开发框架是在gitter chart上看到的  
+
+  * <a href="http://dapple.readthedocs.io/en/master/" target="readthedocs">readthedocs</a>
+
+> 该网站是以太坊的gitter chart的网站，根据项目分了很多房间，只要你提问题，大部分有人回答，很不错，不过只能英语交流。
+  * <a href="https://gitter.im/orgs/ethereum/rooms" target="ethrooms">ethrooms</a>  
