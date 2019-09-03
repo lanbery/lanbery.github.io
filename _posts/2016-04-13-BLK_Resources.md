@@ -61,3 +61,9 @@ https://github.com/sofanetwork/smartContract
 ## DAG
 <a href="https://xdag.io/zh/" target="dag">DAG</a>
 
+# Ethereum Useful URL
+
+> 
+
+  * <a href="https://ethereum.org/" target="ethereum">以太坊官方网站：https://ethereum.org/</a>   
+
