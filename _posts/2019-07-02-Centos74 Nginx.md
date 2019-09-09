@@ -151,6 +151,9 @@ centos7 之后默认防火墙为firewall
   在指定区域开启某个范围的端口号(如18881~65534，命令方式)
 ```bash
   firewall-cmd --zone=public --add-port=18881:65534/tcp --permanent
+  firewall-cmd --permanent --zone=public --add-port=50810-50820/tcp 
+  firewall-cmd --permanent --zone=public --add-port=50810-50820/udp 
+  firewall-cmd --reload
 ```
 
 > telnet 测试
