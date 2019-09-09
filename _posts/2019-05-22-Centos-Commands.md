@@ -165,4 +165,46 @@ tar -xzf xxx.ca.tar.gz
 
   cd /data/web
   zip -r web.zip web --exclude *.git*  // 排除 .git
+
+
+# Centos System 
+> 目录结构详细
+
+![目录结构](https://lanbery.github.io/docs/images/2019/centos-dir.png?raw=true)
+
+``` bash
+
+/               : 根目录，一般根目录下只存放目录，不要存放文件,/etc、/bin、/dev、/lib、/sbin应该和根目录放置在一个分区
+/bin:/usr/bin   : 可执行二进制文件的目录，如常用的命令ls、tar、mv、cat等
+/boot           : 放置linux系统启动时用到的一些文件。/boot/vmlinuz为linux的内核文件
+/dev            : 系统配置文件存放的目录，不建议在此目录下存放可执行文件，重要的配置文件有/etc/inittab、/etc/fstab、/etc/init.d、/etc/X11、/etc/sysconfig、/etc/xinetd.d修改配置文件之前记得备份
+/etc            : 系统配置文件存放的目录，不建议在此目录下存放可执行文件，重要的配置文件有/etc/inittab、/etc/fstab、/etc/init.d、/etc/X11、/etc/sysconfig、/etc/xinetd.d修改配置文件之前记得备份
+/home           : 用户home目录，新增用户账号时，用户的home目录都存放在此目录下，~表示当前用户的home目录
+/lib:/usr/lib:/usr/lcoal/lib  : 系统使用的函数库的目录，程序在执行过程中，需要调用一些额外的参数时需要函数库的协助
+
+/lost+fount     : 系统异常产生错误时，会将一些遗失的片段放置于此目录下
+/opt            : 给主机额外安装软件所摆放的目录
+/proc           : 此目录的数据都在内存中，如系统核心，外部设备，网络状态，由于数据都存放于内存中，所以不占用磁盘空间，比较重要的目录有/proc/cpuinfo、/proc/interrupts、/proc/dma、/proc/ioports、/proc/net/*等
+/root           : 系统管理员root的家目录，系统第一个启动的分区为/，所以最好将/root和/放置在一个分区下
+/sbin:/usr/sbin :
+/usr/local/sbin : 放置系统管理员使用的可执行命令，如fdisk、shutdown、mount等。与/bin不同的是，这几个目录是给系统管理员root使用的命令，一般用户只能"查看"而不能设置和使用
+/tmp            : 一般用户或正在执行的程序临时存放文件的目录,任何人都可以访问,重要数据不可放置在此目录下
+/usr            :应用程序存放目录，
+/usr/bin        : 存放应用程序， 
+/usr/share      : 存放共享数据，
+/usr/lib        : 存放不能直接运行的，却是许多程序运行所必需的一些函数库文件。
+/usr/lcoal      : 存放软件升级包。
+/usr/share/doc  : 系统说明文件存放目录。
+/usr/share/man  : 程序说明文件存放目录
+
+/var            : 放置系统执行过程中经常变化的文件，如随时更改的日志文件 
+/var/log        :
+/var/log/message : 所有的登录文件存放目录，
+/var/spool/mail : 邮件存放的目录， 
+/var/run        : 程序或服务启动后,其PID存放在该目录下
+
+```
+
+
+
   
