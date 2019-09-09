@@ -122,17 +122,19 @@ centos7 之后默认防火墙为firewall
 ### firewall-cmd 命令
 
 > firewall-cmd
-
+```bash
   - [--version]
   - [--help]
   - [--get-active-zones] 查看区域信息
   - [--get-zone-of-interface=eth0] 查看指定接口所属区域信息
+```
 
 > firewall-cmd --reload 重启防火墙
 
 ### 查看指定区域所有开启的端口号
-
+```bash
   firewall-cmd --zone=public --list-ports
+```
 
 ### 开放端口
 
@@ -147,8 +149,9 @@ centos7 之后默认防火墙为firewall
 > 在指定区域开启某个范围的端口号
 
   在指定区域开启某个范围的端口号(如18881~65534，命令方式)
-
+```bash
   firewall-cmd --zone=public --add-port=18881:65534/tcp --permanent
+```
 
 > telnet 测试
 
