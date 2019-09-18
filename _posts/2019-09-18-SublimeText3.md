@@ -13,6 +13,7 @@ tags:
 
 > Sublime Text FileHeader Config
 
+修改文件${packages}/FileHeader/FileHeader.py
 
 # Core Modified
 
@@ -48,7 +49,9 @@ def get_user():
 ```
 
 ### 获得项目路径
+
 > get_project_path 为了让 git 获取项目配置
+
 ``` python
 def get_project_path():
     '''Get project name'''
