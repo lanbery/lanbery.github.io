@@ -74,7 +74,9 @@ enabled=1
 
 > 验证
 
+```bash
   yum list |grep nginx                   current version 1.1.16
+```
 
 > 安装
 
