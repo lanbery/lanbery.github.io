@@ -92,6 +92,123 @@ useradd -d /opt/nginx/www -m www -g www -G nginx   \\
 
 ```
 
+----
+
+## 配置Nginx
+
+### 配置 nginx.conf 
+
+> /etc/nginx/nginx.conf 
+> line 1: user
+
+
+``` script
+user  www;
+worker_processes  1;
+
+error_log  /var/log/nginx/error.log warn;
+pid        /var/run/nginx.pid;
+
+
+events {
+    worker_connections  4096;
+}
+
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    keepalive_timeout  65;
+		
+		# modified
+    gzip  on;
+    gzip_min_length 1k;
+    gzip_buffers 16 64k;
+    gzip_http_version 1.1;
+    gzip_comp_level 6;
+    gzip_types text/plain application/x-javascript text/css application/xml;
+    gzip_vary on;    
+
+    include /etc/nginx/conf.d/*.conf;
+}
+
+```
+
+### 创建站点配置
+
+> /etc/nginx/conf.d/{your-domain}.conf
+
+```bash
+touch /etc/nginx/conf.d/{your-domain}.conf
+```
+
+> vim config file
+
+```script 
+
+server {
+  listen	80;
+  server_name	your-domain;
+
+# if enable https need 301 
+#  return 301	https://$server_name$request_uri;
+
+  # http2 need recomments
+  root		/opt/nginx/www/{your-domain};
+
+  location /	{
+  	index	index.html;
+  }
+}
+
+#server {
+#  listen  443 http2	ssl;
+#  server_name		{your-domain};
+#  root			/opt/nginx/www/{your-domain};
+#  add_header  Strict-Transport-Security "max-age=31536000";
+  
+  #ssl			on;
+#  ssl_certificate	/etc/letsencrypt/live/{your-domain}/fullchain.pem;
+#  ssl_certificate_key	/etc/letsencrypt/live/{your-domain}/privkey.pem;
+#  ssl_dhparam		/etc/ssl/certs/dhparams.website.pem;
+#  ssl_protocols		SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+#  ssl_ciphers		ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+
+#  location / {
+#	index 		index.html;
+#  }
+
+#}
+
+
+```
+
+### 验证配置,启动Nginx
+
+``` bash
+nginx -t
+nginx -c /etc/nginx/nginx.conf 
+nginx -s [reload/quit/stop] 優雅的停止nginx用quit
+```
+
+> 启动Nginx 验证web
+
+``` bash
+verify: curl -I 127.0.0.1.1 
+```
+
+
+
 
 
 
