@@ -19,6 +19,7 @@ tags:
   - 安装Nginx	
   - 目录用户准备
   - 配置Nginx
+  - firewall 配置
 
 ----
 
@@ -192,6 +193,38 @@ server {
 
 
 ```
+----
+> 编写index 界面
+
+``` html 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<title>Welcome to {}</title>
+	<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+
+		.p-comesoon{
+			margin:5rem 1rem;
+			font-size: 4rem;
+			color:#f2a977;
+		}
+	</style>	
+</head>
+<body>
+	<h2>Welcome to {} </h2>
+	<p class="p-comesoon">The HomePage Come Soon</p>
+</body>
+</html>
+```
 
 ### 验证配置,启动Nginx
 
@@ -204,8 +237,31 @@ nginx -s [reload/quit/stop] 優雅的停止nginx用quit
 > 启动Nginx 验证web
 
 ``` bash
-verify: curl -I 127.0.0.1.1 
+curl -I 127.0.0.1 
 ```
+
+## 防火墙配置
+
+> firewalld 
+> systemctl status firewalld 
+
+### 添加端口 
+
+``` bash
+firewall-cmd --zone=public --list-ports   #查看开启的端口
+firewall-cmd --permanent --zone=public --add-port=80/tcp 
+firewall-cmd --permanent --zone=public --add-port=20-26/tcp
+firewall-cmd --permanent --zone=public --add-port=20-26/udp 
+firewall-cmd --permanent --zone=public --add-port=41589/tcp   # ssh bak
+firewall-cmd --permanent --zone=public --add-port=41589/udp   # ssh bak
+
+firewall-cmd --reload
+```
+
+
+
+
+
 
 
 
