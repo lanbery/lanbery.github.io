@@ -46,7 +46,17 @@ tags:
   - 同步时间 : ntpdate 1.ro.pool.ntp.org 
   - 定时自动执行 
 
+### 配置信息
 
+> 存储信息查看
+
+```bash
+df -hl
+cat /proc/cpuinfo
+cat /proc/meminfo
+fdisk -l
+free -h
+```
 
 ----
 ### 计划任务
@@ -111,6 +121,7 @@ tags:
 
 -----
 # PS -ef
+
 ![shotcut](https://images2017.cnblogs.com/blog/697265/201709/697265-20170918062621118-415357427.png)
 
 ``` bash
@@ -127,6 +138,9 @@ COMMAND    正在执行的命令行命令
 
 ```
 
+----
+## Linux SWAP
+> Centos7 交换区设置
 
 
 -----

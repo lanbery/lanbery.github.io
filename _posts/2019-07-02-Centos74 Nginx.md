@@ -67,6 +67,13 @@ enabled=1
 ## Deploy Setting
 ### mkdir folder
 
+<a class="add-user" target="lanbery.github.io" href="https://lanbery.github.io/2019/05/22/LinuxCommands">创建用户，用户组</a>
+
+```bash
+groupadd www
+```
+
+
 ``` bash
   mkdir /data/nginx /data/nginx/www
   chown -R root:root /data/nginx
