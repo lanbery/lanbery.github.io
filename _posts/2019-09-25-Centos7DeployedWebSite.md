@@ -258,6 +258,11 @@ firewall-cmd --permanent --zone=public --add-port=41589/udp   # ssh bak
 firewall-cmd --reload
 ```
 
+## Nginx 自动服务
+
+
+
+
 
 
 
