@@ -49,6 +49,65 @@ top
 
 ## 磁盘查询命令
 
+
+----
+## 系统交换文件 swap
+> 在添加swap分区之前我们可以了解下当前系统swap是否存在以及使用情况
+
+```bash
+free -h   # or swapon -s
+df -hal       # 了解硬盘情况
+```
+
+### 添加swap 分区
+
+> 使用dd命令创建名为swapfile 的swap交换文件（文件名和目录任意）
+
+```bash
+dd if=/dev/zero of=/swap/swapfile bs=1024 count=2097152
+
+# or
+
+dd  if=/dev/zero  of=/swap/swapfile  bs=1024  count=2048k
+```
+
+  if(即输入文件,input file)，of(即输出文件,output file)。dev/zero是Linux的一种特殊字符设备(输入设备)，可以用来创建一个指定长度用于初始化的空文件，如临时交换文件，该设备无穷尽地提供0，可以提供任何你需要的数目。 bs=1024 ：单位数据块（block）同时读入/输出的块字节大小为1024 个字节即1KB，bs(即block size)。count=2048000 ：数据块（block）数量为2048000 ，即2048000个1KB。可以计算swap分区的容量为：1KB 2097152=1KB 1024(k)10242=2097152=2G。（dd命令里的单位M表示1024*1024,k表示1024）。
+
+> 执行完毕，对交换文件格式化并转换为swap分区
+
+```bash
+mkswap /swap/swapfile 
+```
+
+> 挂载并激活分区
+
+```bash 
+swapon   /swap/swapfile
+chmod -R 0600 /swap/swapfile    # 不安全的权限 0644，建议使用 0600
+```
+
+> 修改 fstab 配置，设置开机自动挂载该分区
+> vim    /etc/fstab
+
+``` bash
+/swap/swapfile swap swap defaults 0 0600
+
+# or
+
+echo  "/swap/swapfile   swap  swap  defaults  0  0" >>  /etc/fstab
+
+```
+
+### 删除swap 分区
+
+```bash
+swapoff  /swap/swapfile
+rm -rf   /swap/swapfile
+
+vim /etc/fstab  # 注释挂载
+```
+
+
 ----
 # 用戶、用戶組相關
 用戶列表文件：/etc/passwd
