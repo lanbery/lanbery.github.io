@@ -41,8 +41,7 @@ yum install net-tools vim -y
 
 
 ```
-  	* ssh
-  	* firewalld
+
   	* nginx 
   	* swap
 

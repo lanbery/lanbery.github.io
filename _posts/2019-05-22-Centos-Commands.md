@@ -55,6 +55,7 @@ top
 > 在添加swap分区之前我们可以了解下当前系统swap是否存在以及使用情况
 
 ```bash
+mkdir /swap
 free -h   # or swapon -s
 df -hal       # 了解硬盘情况
 ```
@@ -90,7 +91,7 @@ chmod -R 0600 /swap/swapfile    # 不安全的权限 0644，建议使用 0600
 > vim    /etc/fstab
 
 ``` bash
-/swap/swapfile swap swap defaults 0 0600
+/swap/swapfile swap swap defaults 0 0
 
 # or
 

@@ -125,6 +125,11 @@ git submodule add <url> <path>
 
 -----
 
+# Git Proxy Setting
+>
+
+<a href="https://blog.systemctl.top/2017/2017-09-28_set-proxy-for-git-and-ssh-with-socks5/" target="_blank">Git Proxy</a>
+
 
 
 
