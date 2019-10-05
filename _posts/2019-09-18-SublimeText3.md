@@ -16,12 +16,12 @@ tags:
 
 # TEMPLATE 
 
-``` javascript
-    'copyright (c) \{\{current_year\}\} \{\{organization\}\},\{\{author\}\}'
-    email: '\{\{email\}\}'
-    git: '\{\{git_repo\}\}'
-
+``` bash
+'copyright (c) \{\{current_year\}\} \{\{organization\}\},\{\{author\}\}'
+email: '\{\{email\}\}'
+git: '\{\{git_repo\}\}'
 ```
+
 
 
 
