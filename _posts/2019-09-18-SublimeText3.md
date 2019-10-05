@@ -17,7 +17,7 @@ tags:
 # TEMPLATE 
 
 ``` bash
-'copyright (c) {{current_year}} {{organization}},{{author}}'
+copyright (c) '{{'current_year'}}' \{\{organization\}\},{{author}}'
 email: '{{email}}'
 git: '{{git_repo}}'
 ```
