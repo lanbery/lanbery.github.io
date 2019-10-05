@@ -16,7 +16,7 @@ tags:
 
 # TEMPLATE 
 
-``` script
+``` tempalte
     copyright (c) {{current_year}} {{organization}},{{author}}
     email: {{email}}
     git: {{git_repo}}
