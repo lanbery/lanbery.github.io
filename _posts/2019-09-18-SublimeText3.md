@@ -17,9 +17,9 @@ tags:
 # TEMPLATE 
 
 ``` javascript
-    'copyright (c) {{current_year}} {{organization}},{{author}}'
-    email: '{{email}}'
-    git: '{{git_repo}}'
+    'copyright (c) \{\{current_year\}\} \{\{organization\}\},\{\{author\}\}'
+    email: '\{\{email\}\}'
+    git: '\{\{git_repo\}\}'
 
 ```
 
