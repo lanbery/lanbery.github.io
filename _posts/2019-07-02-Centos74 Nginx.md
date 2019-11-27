@@ -231,3 +231,52 @@ centos7 之后默认防火墙为firewall
 ```bash
 --add-moule=/usr/local/src/xxx/
 ```
+
+
+## 断点续传Nginx module 
+
+  - nginx-file-process
+
+
+> nginx conf
+
+
+  #文件下载
+  location /maifeng {
+            alias /nas1/file/maifeng/;
+            #关闭目录结构（视情况是否打开）
+            autoindex off;
+        }
+  #文件上传        
+  location /upload {
+            client_max_body_size 50m;
+            # 转到后台处理URL 
+            upload_pass @maifeng;
+            # 临时保存路径 (暂时保存此处，使用回调处理，将临时文件变成真实有效文件)
+            #     # 可以使用散列
+            upload_store /tmp/nginx-upload;
+            upload_pass_args on;
+            # 上传文件的权限，rw表示读写 r只读 
+            upload_store_access user:rw;
+            # 这里写入http报头，pass到后台页面后能获取这里set的报头字段
+            upload_set_form_field "${upload_field_name}_name" $upload_file_name;
+            upload_set_form_field "${upload_field_name}_content_type" $upload_content_type;
+            upload_set_form_field "${upload_field_name}_path" $upload_tmp_path;
+            # Upload模块自动生成的一些信息，如文件大小与文件md5值 
+            upload_aggregate_form_field "${upload_field_name}_md5" $upload_file_md5;
+            upload_aggregate_form_field "${upload_field_name}_size" $upload_file_size;
+            # 允许的字段，允许全部可以 "^.*$"
+            #upload_pass_form_field "^submit$|^description$";
+            upload_pass_form_field "^.*$";
+            # 每秒字节速度控制，0表示不受控制，默认0 
+            upload_limit_rate 0;
+            # 如果pass页面是以下状态码，就删除此次上传的临时文件 
+            upload_cleanup 400 404 499 500-505;                                                                                
+  }
+  # proxy_pass 不支持uri添加／（可以使用alias），下面配置等同于访问：http://localhost:7992/maifeng        
+  location @maifeng {
+            rewrite ^ /maifeng$1 break;
+            proxy_pass  http://localhost:7992;
+  }
+
+  
