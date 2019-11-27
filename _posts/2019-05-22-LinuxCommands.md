@@ -14,6 +14,10 @@ tags:
 ## Centos Commands
 
 ### 系统命令
+  cat /etc/issue 
+
+  cat /etc/redhat-rlease
+
   uname -n -r -p -o
   查询系统信息
   # whoami #查看当前登录用户名
@@ -247,6 +251,12 @@ COMMAND    正在执行的命令行命令
   *修改软链接*
   ln -snf 源 目标
 
+
+## wget 断点续传 
+
+``` bash 
+wget -O CentOS-7-x86_64-DVD-1908.iso -c -b https://mirrors.cat.net/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-DVD-1908.iso
+```
 
 <html>
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">

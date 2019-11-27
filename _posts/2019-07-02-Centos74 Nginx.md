@@ -14,6 +14,8 @@ tags:
 > 域名解釋基礎理論
 > Nginx Install [yum or source install]
 
+<a href="https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/?_ga=2.92572765.1342294223.1574841925-1039365353.1574841925" target="Nginx Help">Nginx Doc</a>
+
 ----
 # 域名解釋設置
 ## 基礎理論
@@ -53,6 +55,11 @@ gpgcheck=0
 enabled=1
 ```  
 
+> Using mainline nginx need 
+
+```bash
+sudo yum-config-manager --enable nginx-mainline
+```
 
   - update repos : yum update
   - install: yum install nginx
