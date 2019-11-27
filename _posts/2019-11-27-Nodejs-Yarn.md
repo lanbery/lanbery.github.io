@@ -33,6 +33,7 @@ yarn upgrade
 ### 安装指定版本
   
   yarn add [package]@[version]
+  yarn add --dev [package]@[version]
 
 ### 重新下载所有包
 

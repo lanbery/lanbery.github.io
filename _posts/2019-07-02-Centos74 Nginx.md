@@ -166,3 +166,68 @@ centos7 之后默认防火墙为firewall
 > telnet 测试
 
   windows 开启telnet ： 开始　→　控制面板　→　程序和功能　→　打开或关闭Windows功能
+
+
+# Nginx 扩展模块
+
+> Centos yum 方式安装nginx 添加新的modules
+
+> 具体步骤如下
+
+## 检查nginx 版本
+
+```bash
+  nginx -V
+```
+
+## 下载相同版本的可编译nginx
+
+```bash
+  wget http://
+```
+
+## 备份源文件
+
+```bash
+  which nginx 
+  mv /usr/sbin/nginx /usr/sbin/nginx.xxx.bak
+  cp -r /etc/nginx /etc/nginx.bak 
+```
+
+## 检查是否支持新模块
+
+> 比如添加限流模块 limit 和 stream
+
+```bash
+  cd ${nginx_source}
+  ./configure --help | grep limit
+
+```
+
+<img src="docs/images/2019/20191120172742806.png">
+
+** Note **
+
+  - --without-http_limit_conn_module disable 表示已经有该模块，编译时不需要添加
+  - --with-stream  enable  表示当前不包含该模块，编译时需要自己添加
+
+
+``` bash
+
+  ./configure --user=nginx --group=nginx --prefix=/usr/share/nginx --sbin-path=/usr/libs/nginx --modules-path=/usr/lib64/nginx/modules --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-stream --with-file-aio --with-ipv6 ...
+```
+
+  编译过程中出现缺少依赖，可以yum 安装
+
+## 编译通过，继续验证。
+
+
+## 文件替换，并重启
+
+
+> 添加第三方模块时，先下载需要的模块
+编译时添加路径
+
+```bash
+--add-moule=/usr/local/src/xxx/
+```
