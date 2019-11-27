@@ -240,7 +240,7 @@ centos7 之后默认防火墙为firewall
 
 > nginx conf
 
-
+<p>
   #文件下载
   location /maifeng {
             alias /nas1/file/maifeng/;
@@ -279,4 +279,4 @@ centos7 之后默认防火墙为firewall
             proxy_pass  http://localhost:7992;
   }
 
-  
+</p>  
