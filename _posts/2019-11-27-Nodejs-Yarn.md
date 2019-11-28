@@ -5,7 +5,7 @@ subtitle:   Nodejs yarn
 date:       2019-11-27
 author:     lanbery
 header-img: img/banner-shuimo.png
-header-mask:0.15
+header-mask: 0.15
 catalog: true
 tags:
     - Javascript
@@ -28,13 +28,15 @@ yarn remove [package]
 yarn cache clean
 yarn upgrade
 
-
 ```
 
 ### 安装指定版本
   
+```bash  
   yarn add [package]@[version]
+
   yarn add --dev [package]@[version]
+```
 
 ### 重新下载所有包
 ```js 
