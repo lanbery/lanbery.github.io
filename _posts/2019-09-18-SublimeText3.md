@@ -139,3 +139,12 @@ def get_project_path():
 
     return project_path
 ```
+
+### 双击打开新页签设置
+
+> Preferences==>user settings
+
+```json
+    "preview_on_click":false,
+    "translate_tabs_to_spaces":true
+```
