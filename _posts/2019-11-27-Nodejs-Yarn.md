@@ -5,7 +5,7 @@ subtitle:   Nodejs yarn
 date:       2019-11-27
 author:     lanbery
 header-img: img/banner-shuimo.png
-header-mask:0.8
+header-mask:0.15
 catalog: true
 tags:
     - Javascript

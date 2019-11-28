@@ -6,7 +6,7 @@ date:       2019-11-28
 author:     lanbery
 header-img: img/banner-shuimo.png
 header-color: #182b71
-header-mask: 0.1
+header-mask: 0.15
 catalog: true
 tags:
     - Javascript
