@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Front Web Development 
+title: Front Web Development Guide
 subtitle:   Nodejs yarn
 date:       2019-11-27
 author:     lanbery
