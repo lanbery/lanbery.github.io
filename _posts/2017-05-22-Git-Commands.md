@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      开发工具Git
+title:      Git Tools Guide
 subtitle:   Git Commands
 date:       2017-05-22
 author:     lanbery
@@ -15,14 +15,14 @@ tags:
 
 > multi account
 
-``` bash
+```bash
 ssh-keygen -t rsa -C "xxxx"
 
 input id_rsa
 
 ```
 
-``` scripts
+```shell
 ~/.ssh/config
 
 
