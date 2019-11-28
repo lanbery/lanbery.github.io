@@ -13,12 +13,12 @@ layout: default
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
 
-/*     {% if page.header-color %}
-.intro-header .post-heading {
-    padding: 85px 0 55px;
-    color:{% page.header-color %};
-}
-{% endif %} */
+     {% if page.header-color %}
+    .intro-header .post-heading {
+        padding: 85px 0 55px;
+        color:{{ page.header-color }};
+    }
+    {% endif %} 
     {% if page.header-mask %}
     header.intro-header .header-mask{
         width: 100%;
