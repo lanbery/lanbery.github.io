@@ -43,3 +43,31 @@ yarn upgrade
   npm rebuild
   yarn install --force
 ```
+
+----
+## resolution field in package.json 
+> yarn 支持选择性版本解析，可以通过在package.json 增加resolution 字段自定义程序版本
+
+> how to use it?
+
+```js 
+{
+  "name": "project",
+  "version": "1.0.0",
+  "dependencies": {
+    "left-pad": "1.0.0",
+    "c": "file:../c-1",
+    "d2": "file:../d2-1"
+  },
+  "resolutions": {
+    "d2/left-pad": "1.1.1",
+    "c/**/left-pad": "^1.1.2"
+  }
+}
+```
+
+Then run yarn install.
+
+
+  project deps left-pad 1.0.0 but d2 deps left-pad 1.1.1
+--------------------- 
