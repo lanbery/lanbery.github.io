@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Javascript world components 
-subtitle:   plugin and tools
+title:      Javascript world components (一)
+subtitle:   Test Integration Chapter
 date:       2019-11-28
 author:     lanbery
 header-img: img/banner-shuimo.png
