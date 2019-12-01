@@ -423,7 +423,7 @@ module.exports = {
 
 > loaders
 
-<a href="https://www.webpackjs.com/loaders/" target="webpack-loaders">Webpack Loader</a></br>
+<a href="https://www.webpackjs.com/loaders/" target="webpack-loaders">Webpack Loader</a>
 
 <a href="https://www.webpackjs.com/plugins/" target="webpack-plugins">Webpack Plugins</a>
 
