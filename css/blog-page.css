@@ -1,6 +1,10 @@
 p.section-indent {
 	text-indent:2em;
 }
+p.indent-2 {
+	text-indent: 2em;
+}
+
 a.copyright-link {
 	font-size:smaller;
 	margin-bottom: 20px;
