@@ -39,6 +39,10 @@ This is a library which allows you to set, get, and remove private and public da
 
 > Karma Spectacular Test Runner for Javascript
 
+> Karma is a JavaScript test runner created by the team at AngularJS. It IS possible to write unit tests with Mocha alone, however, Karma provides some powerful features that are quite nice to have. In fact, it was the lack of online resources for coupling Karma, Mocha and RequireJS that prompted me to write this article. We’ll be using Karma to build dependencies, create a test server, check for code coverage and drive tests in multiple browsers.
+
+
+
 
 
 ------
