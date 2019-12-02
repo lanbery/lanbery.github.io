@@ -94,3 +94,17 @@ Both run-s and run-p are shorthand commands. run-s is for sequential, run-p is f
 </p>
 
 
+## npx
+
+> npx 全局免安装
+
+```bash
+
+npx @vue/cli -V
+
+等价于
+
+npm install @vue/cli -g
+vue -V
+
+```
