@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Front Web Development
-subtitle:   Nodejs yarn
+subtitle:   Nodejs yarn vs npm 
 date:       2019-11-27
 author:     lanbery
 header-img: img/banner-shuimo.png
@@ -71,3 +71,26 @@ Then run yarn install.
 
   project deps left-pad 1.0.0 but d2 deps left-pad 1.1.1
 --------------------- 
+
+
+# plugins 
+
+## npm-run-all
+
+> A CLI tool to run multiple npm-scripts in parallel or sequential
+
+
+```bash
+npm-run-all
+npm-s
+npm-p
+
+```
+
+<p class="indent-2">
+The main command is npm-run-all. We can make complex plans with npm-run-all command.
+
+Both run-s and run-p are shorthand commands. run-s is for sequential, run-p is for parallel. We can make simple plans with those commands.
+</p>
+
+
