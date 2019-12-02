@@ -14,6 +14,7 @@ tags:
 > 学习以太坊合约机制
 > 通过 Infura 调用合约
 
+<a href="https://eips.ethereum.org/erc" target="EIPS">以太坊改进方案</a>
 
 ----
 # Ethereum
@@ -35,4 +36,22 @@ gasPrice:'2'},function(err,result){
     }
 });
 ```
+
+---
+# ERC standards
+
+> ERC20 
+
+<p class="indent-2">
+  the most common and well-known standard within all crypto community
+</p>
+
+> ERC223
+
+> ERC721
+
+> ERC827
+
+> ERC1155
+
    
