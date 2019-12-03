@@ -148,3 +148,36 @@ def get_project_path():
     "preview_on_click":false,
     "translate_tabs_to_spaces":true
 ```
+
+## Emmet plugin
+
+> emmet 
+> 
+> Preferences -> Package Settings -> Emmet -> Setting --User
+
+
+```js
+{
+    "snippets": {
+        "html": {
+            "snippets": {
+                "myviewport": "<meta name=\"viewport\" content=\"width=device-width\">",
+                "default-css": "<link rel=\"stylesheet\" href=\"style.css\">"
+            },
+            "abbreviations": {
+                "example": "<div id=\"root\"></div>",
+                "bundlejs":"<script src=\"/dist/bundlejs/xx.bundle.js\"></script>",
+                "mydoc":"html>(head>meta[charset='utf-8']+title{${1:Document}}+myviewport+default-css)+body>example",
+                "extdoc":"html>(head>meta[charset='utf-8']+title{${1:Document}}+myviewport+default-css)+body>(example+bundlejs)",
+                "!!":"mydoc[lang='en']",
+                "crx":"!!!+extdoc[lang=${lang}]",
+            }
+        }
+    },  
+}
+```
+
+  * crx+tab: 快捷键生成html
+  * !!+tab:
+
+<a href="https://www.iteye.com/news/27580?spm=a2c4e.10696291.0.0.181c19a4eMNRiK" target="emmet-command">Emmet Key</a>
