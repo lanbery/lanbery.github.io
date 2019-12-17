@@ -556,7 +556,8 @@ module.exports = {
 
 <a href="https://www.webpackjs.com/plugins/" target="webpack-plugins">Webpack Plugins</a>
 
-
+<a href="https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-b" target="webpack">webpackVSglup</a>
+<a href="https://fettblog.eu/gulp-browserify-multiple-bundles/" target="browserify_glup">browserify & glup</a>
 
  
 
