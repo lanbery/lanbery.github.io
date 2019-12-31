@@ -13,6 +13,7 @@ tags:
 
 # webRequest 
 
+<div><img src="/docs/images/2019/webRequest-flow.png" width="300"></div>
 ## details 
 
 ``` text
