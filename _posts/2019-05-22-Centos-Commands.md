@@ -16,6 +16,16 @@ tags:
 
 # 系统级
 
+> 查看操作系统
+
+```bash
+cat /etc/issue 
+
+cat /etc/redhat-release
+
+cat /proc/version
+```
+
 ## netstat -ntpl
 
 ## systemctl start/restart/status/stop excuteabled
