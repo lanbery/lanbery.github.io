@@ -111,6 +111,7 @@ vim /etc/fstab  # 注释挂载
 
 ----
 # 用戶、用戶組相關
+
 用戶列表文件：/etc/passwd
 用戶組列表文件：/etc/group
 
@@ -175,6 +176,8 @@ cat pubkey > /root/.ssh/authorized_keys
 chmod 600 authorized_keys
 
 systemctl restart sshd
+
+stat -c %a *.  //查看数字权限
 ```
 
 
