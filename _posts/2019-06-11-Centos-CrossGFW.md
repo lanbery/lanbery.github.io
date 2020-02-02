@@ -73,6 +73,17 @@ tags:
 # V2r
 > https://github.com/233boy/v2ray/wiki
 
+> step
+
+```bash 
+ $> 1
+ $> enter
+ $> enter port 
+ $> N
+ $> N not ss 
+```
+
+# 
 
 <html>
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
