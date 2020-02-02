@@ -26,6 +26,15 @@ cat /etc/redhat-release
 cat /proc/version
 ```
 
+# history
+
+```bash 
+vim .bash_history
+:set nu
+:wq
+```
+
+
 # timezone
 > Centos7 timezone set 
 

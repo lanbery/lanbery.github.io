@@ -70,6 +70,10 @@ tags:
 
   ./superbench.sh share
 
+# V2r
+> https://github.com/233boy/v2ray/wiki
+
+
 <html>
 <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
 	<div class="pull-right">
