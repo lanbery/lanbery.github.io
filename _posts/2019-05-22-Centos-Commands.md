@@ -26,6 +26,29 @@ cat /etc/redhat-release
 cat /proc/version
 ```
 
+# timezone
+> Centos7 timezone set 
+
+```bash
+  timedatectl 
+```
+```textarea
+      Local time: Sun 2020-02-02 05:53:23 UTC
+  Universal time: Sun 2020-02-02 05:53:23 UTC
+        RTC time: Sun 2020-02-02 05:53:23
+       Time zone: n/a (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: yes
+ RTC in local TZ: no
+      DST active: n/a
+```
+
+> timedatectl set-timezone Asia/Shanghai
+
+> date 
+
+
+
 ## netstat -ntpl
 
 ## systemctl start/restart/status/stop excuteabled
