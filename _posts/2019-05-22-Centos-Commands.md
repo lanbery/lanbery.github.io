@@ -171,6 +171,37 @@ ssh-keygen -t RSA -C "name"
 :file_name
 
 ```  
+## 开启服务器 ssh key 登录
+
+> 修改 /etc/ssh/sshd_config 
+
+```textarea 
+RSAAuthentication yes 
+PubkeyAuthentication yes 
+AuthorizedKeysFile .ssh/authorized_keys
+
+```
+
+> 重启sshd
+
+```bash
+/sbin/service sshd restart
+```
+
+> add key 
+
+> ~/.ssh/authorized_keys
+
+```bash 
+vim authorized_keys
+```
+
+> author permission
+
+```bash 
+chmod 700 ~/.ssh 
+chmod 600 ~/.ssh/authorized_keys
+```
 
 ## 授权
 
