@@ -30,7 +30,9 @@ cat /proc/version
 
 ```bash 
 history | more
-vim .bash_history
+history -c #立即清空里的history当前历史命令的记录
+# bash执行命令时不是马上把命令名称写入history文件的，而是存放在内部的buffer中，等bash退出时会一并写入。
+
 :set nu
 :wq
 ```
