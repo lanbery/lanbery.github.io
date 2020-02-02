@@ -29,6 +29,7 @@ cat /proc/version
 # history
 
 ```bash 
+history | more
 vim .bash_history
 :set nu
 :wq
