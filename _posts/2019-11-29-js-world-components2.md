@@ -116,6 +116,10 @@ console.log(chalk`{rgb(255,0,0).bold.bgRgb(255,255,255) Hello World}`);
 
 ![react version management example](https://lanbery.github.io/docs/images/2020/semver-demo.png?raw=true)
 
+## child_process
+
+<a href="https://www.nodeapp.cn/child_process.html" target="node child_process">child_process</a>
+
 
 
 
