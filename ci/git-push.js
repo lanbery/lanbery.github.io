@@ -7,7 +7,6 @@ const dateYDD =  new DateFormat('YYDDDD');
 BASE_DIR=process.cwd();
 const MERGED = false;
 
-console.log("test>>");
 if(!sh.which('git')){
   console.log("no git bash");
   process.exit(1);
