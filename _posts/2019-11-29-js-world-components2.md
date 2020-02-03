@@ -121,6 +121,63 @@ console.log(chalk`{rgb(255,0,0).bold.bgRgb(255,255,255) Hello World}`);
 <a href="https://www.nodeapp.cn/child_process.html" target="node child_process">child_process</a>
 
 
+## address
+> address :Get current machine IP, MAC and DNS servers
+
+```js 
+var address = require('address');
+
+// default interface 'eth' on linux, 'en' on osx.
+address.ip();   // '192.168.0.2'
+address.ipv6(); // 'fe80::7aca:39ff:feb0:e67d'
+address.mac(function (err, addr) {
+  console.log(addr); // '78:ca:39:b0:e6:7d'
+});
+```
+
+## opn 
+
+> opn : 使用用户默认程序打开网站，文件，可执行文件等内容
+
+> Open stuff like URLs, files, executables. Cross-platform.
+
+> 使用方法
+
+```js 
+const opn = require('opn')
+ 
+//  在默认图像程序打开图像
+opn('unicorn.png').then(() => {
+    // image viewer closed
+});
+
+//  用默认浏览器打开网址
+opn('http://sindresorhus.com');
+ 
+//  用指定应用打开网址
+opn('http://sindresorhus.com', {app: 'firefox'});
+ 
+//  指定打开网址的浏览器参数
+opn('http://sindresorhus.com', {app: ['google chrome', '--incognito']});
+```
+
+## express
+
+> Express 是一个基于 Node.js 封装的上层服务框架，它提供了更简洁的 API 更实用的新功能。它通过中间件和路由让程序的组织管理变的更加容易；它提供了丰富的 HTTP 工具；它让动态视图的渲染变的更加容易；它还定义了一组可拓展标准。
+
+> 使用方法
+
+```js 
+let express = require('express')
+let app = express()
+
+app.get('/',(req,res) => res.end('hello world'))
+
+app.listen(3000,() => console.log('Server is running...'))
+```
+
+
+
 
 
 
