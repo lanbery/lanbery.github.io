@@ -216,9 +216,22 @@ app.listen(3000);
   - 使用 eval-source-map 模式可以减少网络请求。这种模式开启 DataUrl 本身包含完整 sourcemap 信息，并不需要像 sourceURL 那样，浏览器需要发送一个完整请求去获取 sourcemap 文件，这会略微提高点效率。而生产环境中则不宜用 eval，这样会让文件变得极大。
 
 
+## optimize-css-assets-webpack-plugin
+
+> 用於優化壓縮css資源(webpack v4)
+
+  - assetNameRegExp: 正则表达式，用于匹配需要优化或者压缩的资源名。默认值是 /\.css$/g
+  - cssProcessor: 用于压缩和优化CSS 的处理器，默认是 cssnano.这是一个函数，应该按照 cssnano.process 接口(接受一个CSS和options参数，返回一个Promise)
+  - canPrint: {bool} 表示插件能够在console中打印信息，默认值是true
 
 
 
 
 
 
+
+
+
+# githubs
+
+-> https://github.com/one-dragon/webpack4-vue
