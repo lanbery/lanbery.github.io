@@ -1,4 +1,3 @@
-
 const pkgJson = require('../package.json');
 const sh = require('shelljs');
 const DateFormat = require('fast-date-format');
