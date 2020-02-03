@@ -235,3 +235,7 @@ app.listen(3000);
 # githubs
 
 -> https://github.com/one-dragon/webpack4-vue
+
+-> https://github.com/shaohuanhuan/vue2-webpack4-
+
+-> https://juejin.im/post/5dc3b97b6fb9a04aa660ddf7
