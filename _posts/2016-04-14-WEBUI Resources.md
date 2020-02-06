@@ -29,3 +29,6 @@ tags:
 
 ### lite server
 <a href="https://github.com/txchen/light-server" target="lite-server">lite-server</a><br/>
+
+### Good Vue 
+<a href="https://github.com/Shiyanping/webpack-vue-multipage" target="webpack-vue-multipage">webpack-vue-multipage</a><br/>
