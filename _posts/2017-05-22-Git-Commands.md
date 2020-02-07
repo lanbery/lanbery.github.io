@@ -130,6 +130,18 @@ git submodule add <url> <path>
 <a href="https://blog.systemctl.top/2017/2017-09-28_set-proxy-for-git-and-ssh-with-socks5/" target="_blank">Git Proxy</a>
 
 
+## Git 版本回退
+
+```bash 
+git branch -b develop_tmp //先备份当前分支
+
+git log // 记录 commit id 52b2ccffb15dd8135a76a0e6ea41afd3815853e9
+git reset --soft 52b2ccffb15dd8135a76a0e6ea41afd3815853e9
+
+```
+
+
+
 
 
 
