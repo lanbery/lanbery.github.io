@@ -54,3 +54,27 @@ p=16px
 h5=13.28px
 
 h6=12px
+
+
+## TLS 
+https://github.com/233boy/v2ray/wiki
+https://www.v2ray.com/awesome/tools.html
+
+
+## cloudflare 
+adam.ns.cloudflare.com
+irma.ns.cloudflare.com
+
+
+adam.ns.cloudflare.com
+irma.ns.cloudflare.com 
+
+
+ns57.domaincontrol.com
+
+ns58.domaincontrol.com
+
+
+Parked
+_domainconnect
+_domainconnect.gd.domaincon
