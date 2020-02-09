@@ -32,3 +32,25 @@ tags:
 
 ### Good Vue 
 <a href="https://github.com/Shiyanping/webpack-vue-multipage" target="webpack-vue-multipage">webpack-vue-multipage</a><br/>
+
+
+##  H 
+https://blog.csdn.net/zSY_snake/article/details/80216983
+浏览器默认为body:100%=16px;
+
+
+浏览器计算得出:
+
+h1=32px
+
+h2=24px
+
+h3=18.72px
+
+h4=16px
+
+p=16px
+
+h5=13.28px
+
+h6=12px
