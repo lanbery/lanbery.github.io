@@ -380,7 +380,8 @@ new Vue({
         <div class="card-carousel">
             <div class="card-carousel--overflow-container">
                 <div class="card-carousel-cards" :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}">
-                    <div class="card-carousel--card" v-for="item in items"><img src="https://placehold.it/200x200" />
+                    <div class="card-carousel--card" v-for="item in items">
+                    <img src="https://placehold.it/200x200" />
                         <div class="card-carousel--card--footer">
                             <p>{{ item.name }}</p>
                             <p class="tag" v-for="(tag,index) in item.tag" :class="index &gt; 0 ? 'secondary' : ''">{{ tag }}</p>
@@ -396,3 +397,6 @@ new Vue({
     <carousel></carousel>
 </div>
 ```
+
+# 2-22 VUE路由拦截：Vue自定义全局弹窗组件
+https://cloud.tencent.com/developer/article/1550004

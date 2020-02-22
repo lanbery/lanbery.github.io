@@ -83,14 +83,42 @@ git tag -s v1.5 -m 'my signed 1.5 tag'
   - git branch -d tmp             //删除本地临时分支
 
 ## git command 
+> fix 规范
+
+``` bash
+add: 提交
+update：更新
+remove：移动
+delete：删除
+feature: 功能
+change：修改
+fix：修复bug
+```
+
+### fix issue
 > Fix issue 
 
-```
+> commit -m ****  fixes #
+
+``` bash
 git commit -m "message, fixes #issueId"
 
 ```
+>类型
 
+必须是以下之一：
 
+```bash
+build:影响构建系统或外部依赖关系的更改（示例范围：gulp, broccoli, npm）
+ci: 更改我们的配置文件和脚本（示例范围：Travis, Circle, BrowserStack, SauceLabs）
+docs: 仅文档更改，比如README, CHANGELOG, CONTRIBUTE等等
+feat: 一个新功能
+fix: 一个错误修复
+perf: 一个改进性能的代码更改，比如提升性能、体验
+refactor: 代码更改，既不修复错误也不添加功能
+style: 不改变代码逻辑，仅仅修改代码风格（空格，格式化，分号分号等）
+test: 添加缺失测试或更正现有测试（测试用例，包括单元测试、集成测试等）
+revert: 回滚到某一个版本（带上版本号）
 
 
 ## Git Submodule 子模块 
