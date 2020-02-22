@@ -82,6 +82,17 @@ git tag -s v1.5 -m 'my signed 1.5 tag'
   - git merge tmp             //用tmp 合并本地当前分支
   - git branch -d tmp             //删除本地临时分支
 
+## git command 
+> Fix issue 
+
+```
+git commit -m "message, fixes #issueId"
+
+```
+
+
+
+
 ## Git Submodule 子模块 
 ### add Submodule
 
