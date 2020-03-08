@@ -262,7 +262,66 @@ firewall-cmd --reload
 ## Nginx 自动服务
 
 
+# Ubuntu 安装最新的 Nginx
+> 常用命令
 
+```command
+sudo lsb_release -a 
+cat   /etc/issue
+ufw status/enable/disable  //防火墻狀態
+sudo ufw allow 53  //開啟端口
+chown ubuntu ada/ 授权用户目录 方便scp upload file  
+apt-get install xx //安裝軟件
+```
+
+> 切换root
+
+```bash
+sudo root
+```
+
+> 娘希匹 跳板機設置
+```bash
+mv **.pem ~/.ssh/aws.pem 
+chmod 600 ~/.ssh/aws.pem 
+
+stat -c %a **.* // 查看文件數字權限
+```
+
+```sh
+Host favirate
+Port 22
+HostName *.*.*.*
+User ubuntu
+IdentityFile ~/.ssh/aws.pem
+``  
+
+## 创建Nginx 源文件
+> /etc/apt/sources.list.d/nginx.list 
+
+vim 
+```script
+deb [arch=amd64] http://nginx.org/packages/mainline/ubuntu/ bionic nginx
+deb-src http://nginx.org/packages/mainline/ubuntu/ bionic nginx
+```
+> 为了验证从此存储库下载的包的完整性，我们需要使用以下命令导入Nginx公钥
+
+```bash
+cd ~
+wget http://nginx.org/keys/nginx_signing.key 
+apt-key add 
+nginx_signing.key 
+
+sudo apt update
+```
+
+> 安装前检查 
+
+``bash 
+which nginx 
+
+apt install nginx
+```
 
 
 
