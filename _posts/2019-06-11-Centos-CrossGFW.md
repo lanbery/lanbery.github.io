@@ -10,6 +10,11 @@ tags:
     - tech-wiki
     - SS	
 ---
+## 网络检测命令
+
+> tracert -d ip 
+
+> ping -t ip
 
 ## yum 基礎Commands
   yum repolist all 
