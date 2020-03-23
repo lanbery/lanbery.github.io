@@ -3,7 +3,7 @@ layout:     post
 title:      Centos7 安装SS
 subtitle:   穿越火线
 date:       2019-06-11
-author:     lanbery
+author:     copy 233boy
 header-img: img/post-bg-mma-4.jpg
 catalog: true
 tags:
@@ -16,11 +16,7 @@ tags:
 
 > ping -t ip
 
-## yum 基礎Commands
-  yum repolist all 
-  yum update
-  yum list install | grep python-pip 查詢是否安裝
-  yum remove python-pip
+
 
 
 
@@ -53,6 +49,14 @@ tags:
 
   systemctl enable  sscs.service
 
+## firewall 
+```bash 
+firewall-cmd --zone=public --list-ports   #查看开启的端口
+firewall-cmd --permanent --zone=public --add-port=0-1000/tcp   # ssh bak
+firewall-cmd --permanent --zone=public --add-port=0-1000/udp   # ssh bak
+firewall-cmd --reload
+```
+
 #### pip 
   /etc/privoxy/config
 
@@ -81,6 +85,7 @@ tags:
 > step
 
 ```bash 
+bash <(curl -s -L https://git.io/v2ray.sh)
  $> 1
  $> enter
  $> enter port 
