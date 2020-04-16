@@ -33,12 +33,14 @@ tags:
 ### git tags
 
 > 列出已有标签
+
 ```bash
 git tag
 git tag -l 'v1.0.*' # 过滤
 ```
 
 > 新建标签
+
 ```bash
 git tag -a v1.0.2 -m "comments"  # 新建带注释标签
 git show v1.0.2 #查看标签信息
@@ -53,6 +55,7 @@ git push origin v1.0.2 # 上传tag到远程
 
 >签署标签
 如果你有自己的私钥，还可以用 GPG 来签署标签，只需要把之前的 -a 改为 -s （译注： 取 signed 的首字母）即可
+
 ```bash
 git tag -s v1.5 -m 'my signed 1.5 tag'
 ```
@@ -144,6 +147,7 @@ git submodule add <url> <path>
 进入到子模块目录下，执行 git pull更新，查看git log查看相应提交
 
 ### 删除子模块
+
 ```bash 
   - rm -rf 子模块目录 删除子模块目录及源码
   - vi .gitmodules 删除项目目录下.gitmodules文件中子模块相关条目

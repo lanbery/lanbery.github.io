@@ -559,6 +559,13 @@ module.exports = {
 <a href="https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-b" target="webpack">webpackVSglup</a>
 <a href="https://fettblog.eu/gulp-browserify-multiple-bundles/" target="browserify_glup">browserify & glup</a>
 
+> promise-to-callback lib 将promise 转成 callback
+
+> ethjs-ens A convenience interface for using the Ethereum Name Service, based on the EthJS contract abstraction.
+ 
+ MetaMask 通过infura.io rpc 到eth 网络
+ 
+
  
 
 
