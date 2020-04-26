@@ -67,3 +67,28 @@ webRequest.ResourceType. The type of resource being requested: for example, "ima
 url
 string. Target of the request.
 ```
+
+## 
+https://github.com/EmailThis/extension-boilerplate.git
+
+https://www.sitepoint.com/build-vue-chrome-extension/
+
+
+----
+# Resources
+
+> Vue Extension 
+
+https://medium.com/@simoneldevig_80359/building-chrome-extensions-with-vue-js-cafaefb82bd4
+
+https://f-e-d.club/topic/chrome-extension-to-do-the-local-storage-localstorage.article
+
+
+## MetaMask Balance 
+
+Balance bind txController.on (
+//submitted,confirmed,failed then update balance
+)
+
+accountTracker.store.subscribe(update)
+blockTracker.on('latest',update)
