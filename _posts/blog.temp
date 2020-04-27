@@ -3,7 +3,7 @@ layout:     post
 title:      IPFS协议层深入分析
 subtitle:   路由层协议
 date:       2018-07-11
-author:     西二旗李老师
+author:     
 header-img: img/post-bg-hacker.jpg
 catalog: true
 tags:
@@ -14,6 +14,7 @@ tags:
 ## 前言
 <html>
 <p class="section-indent">
+	https://zhuanlan.zhihu.com/p/44854088
 </p>
 <img src="">
 <p class="section-indent">

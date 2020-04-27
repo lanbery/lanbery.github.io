@@ -98,6 +98,15 @@ change：修改
 fix：修复bug
 ```
 
+## 切换Remote Url
+
+```bash
+git remote -v                       //先检查remote Repositories
+git remote set-url origin url       //url https://github.com/username/repository.git 
+git remote -v                       //
+git remote set-url origin git@ssh-host:(username/org)/repository.git   // set ssh push 
+```
+
 ### fix issue
 > Fix issue 
 
