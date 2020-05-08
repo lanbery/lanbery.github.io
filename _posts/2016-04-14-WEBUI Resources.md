@@ -78,3 +78,34 @@ ns58.domaincontrol.com
 Parked
 _domainconnect
 _domainconnect.gd.domaincon
+
+
+# Mobile UI
+
+
+## Vue IndexDB
+
+https://www.raymondcamden.com/2019/10/16/using-indexeddb-with-vuejs
+https://github.com/cfjedimaster/vue-demos/tree/master/idb
+
+https://www.html5rocks.com/en/tutorials/offline/quota-research/
+
+
+https://github.com/jakearchibald/idb
+
+## Vux
+> Base Vue  ui
+https://github.com/airyland/vux
+
+
+## vonic
+https://github.com/wangdahoo/vue-scroller
+
+
+## Smart 
+https://medium.com/@mail.bahurudeen/create-compile-and-deploy-smart-contracts-on-ethereum-blockchain-network-and-interacting-with-it-cb40d9596525
+
+https://github.com/DodoTheDeveloper/solc-js-compile-0.5.2-0.5.x/blob/master/compile.js
+
+
+https://www.dappuniversity.com/articles/web3-js-intro

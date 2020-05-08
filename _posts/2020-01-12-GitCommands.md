@@ -85,6 +85,14 @@ git tag -s v1.5 -m 'my signed 1.5 tag'
   - git merge tmp             //用tmp 合并本地当前分支
   - git branch -d tmp             //删除本地临时分支
 
+> 对比两次提交具体文件差别
+
+``` bash
+git log    // 查看commit list 
+git diff hash1 hash2 --stat         // 对比所有更改
+git diff hash hash ./file 
+```
+
 ## git command 
 > fix 规范
 
