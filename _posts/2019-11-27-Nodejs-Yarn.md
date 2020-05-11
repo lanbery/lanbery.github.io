@@ -108,3 +108,20 @@ npm install @vue/cli -g
 vue -V
 
 ```
+
+### npm view 
+
+> lookup an module versions list
+
+```bash 
+npm view bootstrap versions
+
+npm config set registry https://registry.npm.taobao.org
+cnpm config set registry https://registry.npm.taobao.org
+yarn config set registry https://registry.npm.taobao.org
+配置后可通过下面方式来验证是否成功 ：
+npm config get registry
+```
+
+
+
