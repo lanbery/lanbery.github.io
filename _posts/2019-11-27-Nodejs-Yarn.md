@@ -123,5 +123,18 @@ yarn config set registry https://registry.npm.taobao.org
 npm config get registry
 ```
 
+## Yarn 
+
+```bash 
+yarn config get registry # 查看当前源
+yarn config set registry https://registry.npm.taobao.org  #
+yarn config set registry https://registry.yarnpkg.org  # 自带源
+npm config set registry https://registry.npmjs.org/
+```
+https://classic.yarnpkg.com/en/docs/cli/publish
 
 
+### yarn publish 
+
+npm publish
+npm --force unpublish 包名
