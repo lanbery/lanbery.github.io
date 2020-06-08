@@ -138,3 +138,5 @@ https://classic.yarnpkg.com/en/docs/cli/publish
 
 npm publish
 npm --force unpublish 包名
+
+https://learnku.com/articles/15976/yarn-accelerate-and-modify-mirror-source-in-china
