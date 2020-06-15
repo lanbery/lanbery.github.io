@@ -13,6 +13,18 @@ tags:
 
 # Nginx Study
 
+> 常用命令：
+
+```bash 
+nginx -V 
+nginx -t 
+nginx -s reload or stop quit  # 彻底退出用quit
+systemctl stop nginx 
+nginx -c /etc/nginx/nginx.conf 
+```
+
+
+
 ## 唯一安装Nginx 添加第三方模块
 
 > 步骤：
@@ -56,3 +68,89 @@ configure arguments: --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --modules-p
 ### 下载对应Nginx版本源码包
 
 wget -c https://nginx.org/download/nginx-1.18.0.tar.gz
+
+
+
+
+# 开启gzip
+gzip  on;
+# 启用gzip压缩的最小文件，小于设置值的文件将不会压缩
+gzip_min_length 1k;
+# gzip 压缩级别，1-10，数字越大压缩的越好，也越占用CPU时间。一般设置1和2
+gzip_comp_level 2;
+# 进行压缩的文件类型。javascript有多种形式。其中的值可以在 mime.types 文件中找到。
+gzip_types text/plain application/javascript application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png;
+# 是否在http header中添加Vary: Accept-Encoding，建议开启
+gzip_vary on;
+# 禁用IE 6 gzip
+gzip_disable "MSIE [1-6]\.";
+# 设置缓存路径并且使用一块最大100M的共享内存，用于硬盘上的文件索引，包括文件名和请求次数，每个文件在1天内若不活跃（无请求）则从硬盘上淘汰，硬盘缓存最大10G，满了则根据LRU算法自动清除缓存。
+proxy_cache_path /var/cache/nginx/cache levels=1:2 keys_zone=imgcache:100m inactive=1d max_size=10g;
+
+
+
+        #负载均衡配置 
+    upstream lazyegg.net { 
+ 
+        #upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。 
+        server 192.168.80.121:80 weight=3; 
+        server 192.168.80.122:80 weight=2; 
+        server 192.168.80.123:80 weight=3; 
+ 
+        #nginx的upstream目前支持4种方式的分配 
+        #1、轮询（默认） 
+        #每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除。 
+        #2、weight 
+        #指定轮询几率，weight和访问比率成正比，用于后端服务器性能不均的情况。 
+        #例如： 
+        #upstream bakend { 
+        #    server 192.168.0.14 weight=10; 
+        #    server 192.168.0.15 weight=10; 
+        #} 
+        #2、ip_hash 
+        #每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题。 
+        #例如： 
+        #upstream bakend { 
+        #    ip_hash; 
+        #    server 192.168.0.14:88; 
+        #    server 192.168.0.15:80; 
+        #} 
+        #3、fair（第三方） 
+        #按后端服务器的响应时间来分配请求，响应时间短的优先分配。 
+        #upstream backend { 
+        #    server server1; 
+        #    server server2; 
+        #    fair; 
+        #} 
+        #4、url_hash（第三方） 
+        #按访问url的hash结果来分配请求，使每个url定向到同一个后端服务器，后端服务器为缓存时比较有效。 
+        #例：在upstream中加入hash语句，server语句中不能写入weight等其他的参数，hash_method是使用的hash算法 
+        #upstream backend { 
+        #    server squid1:3128; 
+        #    server squid2:3128; 
+        #    hash $request_uri; 
+        #    hash_method crc32; 
+        #} 
+ 
+        #tips: 
+        #upstream bakend{#定义负载均衡设备的Ip及设备状态}{ 
+        #    ip_hash; 
+        #    server 127.0.0.1:9090 down; 
+        #    server 127.0.0.1:8080 weight=2; 
+        #    server 127.0.0.1:6060; 
+        #    server 127.0.0.1:7070 backup; 
+        #} 
+        #在需要使用负载均衡的server中增加 proxy_pass http://bakend/; 
+ 
+        #每个设备的状态设置为: 
+        #1.down表示单前的server暂时不参与负载 
+        #2.weight为weight越大，负载的权重就越大。 
+        #3.max_fails：允许请求失败的次数默认为1.当超过最大次数时，返回proxy_next_upstream模块定义的错误 
+        #4.fail_timeout:max_fails次失败后，暂停的时间。 
+        #5.backup： 其它所有的非backup机器down或者忙的时候，请求backup机器。所以这台机器压力会最轻。 
+ 
+        #nginx支持同时设置多组的负载均衡，用来给不用的server来使用。 
+        #client_body_in_file_only设置为On 可以讲client post过来的数据记录到文件中用来做debug 
+        #client_body_temp_path设置记录文件的目录 可以设置最多3层目录 
+        #location对URL进行匹配.可以进行重定向或者进行新的代理 负载均衡 
+    } 

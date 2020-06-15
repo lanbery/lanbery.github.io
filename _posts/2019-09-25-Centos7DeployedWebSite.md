@@ -250,13 +250,16 @@ curl -I 127.0.0.1
 
 ``` bash
 firewall-cmd --zone=public --list-ports   #查看开启的端口
-firewall-cmd --permanent --zone=public --add-port=80/tcp 
+firewall-cmd --permanent --zone=public --add-port=80/tcp --permanent
 firewall-cmd --permanent --zone=public --add-port=20-26/tcp
 firewall-cmd --permanent --zone=public --add-port=20-26/udp 
 firewall-cmd --permanent --zone=public --add-port=41589/tcp   # ssh bak
 firewall-cmd --permanent --zone=public --add-port=41589/udp   # ssh bak
 
 firewall-cmd --reload
+
+sudo iptables -w -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -w -A INPUT -p tcp --dport 80:90 -j ACCEPT
 ```
 
 ## Nginx 自动服务
