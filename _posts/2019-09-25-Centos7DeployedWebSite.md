@@ -328,11 +328,26 @@ apt install nginx
 
 
 
+## 配置文件加载服务器 
 
+```script 
+server{
+        listen 80;
+        server_name localhost;
 
+        location / {
+                #root /usr/share/nginx/html;
+                alias /usr/share/nginx/html/;
+                index index.html index.htm;
+        }
 
+        location /downloads {
+                #root /usr/share/nginx;
+                alias /usr/share/nginx/downloads/;
+                autoindex       on;
+                autoindex_exact_size    off;
+                autoindex_localtime     on;
+        }
+}
 
-
-
-
-
+```
