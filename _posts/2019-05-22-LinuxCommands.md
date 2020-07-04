@@ -240,8 +240,10 @@ usermod -a -G 用户组 用户名
 
 
 ### 查看文件权限数值
-  
+
+```bash   
   stat -c %a **.* 	
+```
 
 ###  chmod 700 xx.txt
 	授权	
