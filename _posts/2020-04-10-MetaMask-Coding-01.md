@@ -20,3 +20,13 @@ tags:
 ## 整理中...
 
 > 
+
+### Ethereum instance
+
+> ethereum.request(method,params)
+
+
+>> { method: 'eth_accounts' }
+
+
+>> eth_requestAccounts

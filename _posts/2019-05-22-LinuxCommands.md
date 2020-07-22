@@ -243,7 +243,11 @@ usermod -a -G 用户组 用户名
 
 ```bash   
   stat -c %a **.* 	
+
+  stat -c '%n %a %U:%G' . *
 ```
+
+
 
 ###  chmod 700 xx.txt
 	授权	
