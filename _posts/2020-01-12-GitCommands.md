@@ -158,7 +158,17 @@ git submodule add <url> <path>
   git submodule update
 
   git submodule update --init --recursive
+
 ```
+
+> 加入不成功时
+```
+git rm --cached smart_v3
+rm -rf submod_folder
+git submodule add url ./submod_folder
+```
+
+
 
 ### 子模块的更新
 进入到子模块目录下，执行 git pull更新，查看git log查看相应提交
