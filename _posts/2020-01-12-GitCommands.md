@@ -37,7 +37,26 @@ tags:
 ```bash
 git tag
 git tag -l 'v1.0.*' # 过滤
+
+
 ```
+
+### checkout from tag and fixed bug workflow
+
+```bash
+git tag -l  # 列出分支 
+git checkout v3.0.2  # checkout tag 
+git checkout -b 3.0.2  # create local fixed bug branch 
+git diff develop  src/xxx/xxx.js  # 对比文件差异
+git commit -m "fixed bug #xxx" -a  # fixed bug and commit branch
+git checkout develop #
+git pull # let develop Keep consistent remote
+git merge 3.0.2  # 合并分支 
+git push  # 
+git branch -D 3.0.2 # 删除本地分支
+
+```
+
 
 > 新建标签
 
@@ -139,6 +158,8 @@ refactor: 代码更改，既不修复错误也不添加功能
 style: 不改变代码逻辑，仅仅修改代码风格（空格，格式化，分号分号等）
 test: 添加缺失测试或更正现有测试（测试用例，包括单元测试、集成测试等）
 revert: 回滚到某一个版本（带上版本号）
+
+```
 
 
 ## Git Submodule 子模块 
