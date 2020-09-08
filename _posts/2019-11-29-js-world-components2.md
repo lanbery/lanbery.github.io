@@ -239,3 +239,15 @@ app.listen(3000);
 -> https://github.com/shaohuanhuan/vue2-webpack4-
 
 -> https://juejin.im/post/5dc3b97b6fb9a04aa660ddf7
+
+## Github boilerplates
+
+> https://github.com/taniarascia/webpack-boilerplate  webpack4 
+
+> webpack full extension : https://github.com/kamilogerto2/webpack-react-extension-boilerplate
+
+https://github.com/jhen0409/react-chrome-extension-boilerplate.git
+
+https://developer.aliyun.com/mirror/npm/package/react-redux-chrome-extension-boilerplate
+
+https://smellycode.com/chrome-extension-live-reloading-with-react/ 
