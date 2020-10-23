@@ -140,3 +140,12 @@ m/purpse’/coin_type’/account’/change/address_index
 {"data":"ElVjnjDFFiWdYKcjUsDlST7B5VULeW+NLsTl6ruqtsI09nqc9afHpbNw/KK2uxzlhuKBi0QWrN0PNKqJhWbd9FZ23MrDqi5SSouR+qCaJN7U4VYKo2JHtHnoreauR9F+pwJb4CRvH+chMJBsJYYjnsi6QVYCxYGLs94a+fp/bA9WJfqFv3f7bN+u509tUwRbTcMIYliW2zldZxibDfulCmDs2OUJXFozRJF/ln6Nymhog5nIoQe+HnCO","iv":"zGnnk9oo0t7MtuogOGXBAw==",
 "salt":"ilgZz7GCn4N2rPBFJupSsVwzGSlvi/woah1H58IYElQ="
 }
+
+
+### IPFS 作用
+
+> "dweb.link"
+
+*://*.eth/*  request 
+
+setup(network:3,"dweb.link",provider:{1377,ropsten,...})
