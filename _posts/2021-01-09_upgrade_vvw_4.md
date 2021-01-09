@@ -15,7 +15,7 @@ tags:
 > Vue
 
 > 参考 [vue](https://www.jianshu.com/p/540e7924af1f) https://www.jianshu.com/p/540e7924af1f
-
+> https://www.jianshu.com/p/bec94ad1d9f0
 # vue-cli 创建项目
 
 ```bash
@@ -60,4 +60,38 @@ yarn add -D vue-loader@latest
 ```js 
 
 
+```
+
+## CSS 解析Upgrade
+
+mini-css-extract-plugin
+
+> edit build/utils.js => if (options.extract) 
+
+```js 
+    // Extract CSS when that option is specified
+    // (which is the case during production build)
+    // if (options.extract) {
+    //   return ExtractTextPlugin.extract({
+    //     use: loaders,
+    //     fallback: 'vue-style-loader'
+    //   })
+    // } else {
+    //   return ['vue-style-loader'].concat(loaders)
+    // }
+
+    return [
+      {
+        loader:MiniCssExtractPlugin.loader
+      },
+      'css-loader'
+    ]
+``` 
+
+## clean-webpack-plugin
+
+> 可以用于清除文件目录下的文件
+
+```bash
+yarn add -D clean-webpack-plugin
 ```
