@@ -95,3 +95,10 @@ mini-css-extract-plugin
 ```bash
 yarn add -D clean-webpack-plugin
 ```
+
+## Eslint 
+
+> Delete `⏎⏎··`  prettier/prettier 
+
+https://juejin.cn/post/6844904069304156168
+git config --global core.autocrlf false
