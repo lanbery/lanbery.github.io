@@ -20,7 +20,7 @@
     },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
-        "py3view": "cd _site; python3 -m http.server 8020",
+        "py3view": "cd _site; python -m http.server 8020",
         "watch": "grunt watch & npm run preview & jekyll serve -w",
         "py3wa": "grunt watch & npm run py3view & jekyll serve -w",
         "boil": "git push boilerplate boilerplate:master",
