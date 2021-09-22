@@ -179,3 +179,10 @@ func (m *ServerMethod) HeartBeat(params ReadData) {
   WebsocketManager.Success(params.Actioncode, true, params.IsBroadCast, params.ClientIDs)
 }
 ```
+
+
+
+## go service github sources
+
+
+> [基于go-zero的DEMO](https://github.com/jackluo2012/datacenter)
