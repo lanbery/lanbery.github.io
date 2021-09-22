@@ -41,7 +41,7 @@ curl-I https://www.google.com
 unset all_proxy
 ```
 
-也可以将上面命令编辑成脚本,保存到"~/.zshrc"
+也可以将上面命令编辑成脚本,保存到"~/.bash_aliases"
 
 ```shell
 export hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
@@ -49,7 +49,7 @@ alias setss='export https_proxy="http://${hostip}:14996";export http_proxy="http
 alias unsetss='unset all_proxy'
 ```
 
-然后执行source ~/.zshrc
+然后执行source . .bash_aliases
 
 ---
 
@@ -113,3 +113,31 @@ IdentityFile ~/.ssh/private
 # Proxycommand /usr/bin/nc -v -X 5 -x 127.0.0.1:14996 %h %p 2> /var/logs/gitxxx.log
 ```
 
+#### 配置工作目录
+
+> id 查看当前用户和用户组
+
+```bash
+sudo mkdir /work/demo_wsp
+sudo chown -R user:group /work/demo_wsp # 授权用户
+```
+
+#### git ssh proxy
+
+👎👎👎又是沦陷区,download 被限制在几k,干掉他们.
+
+```bash
+setss 
+unsetss
+```
+
+#### Nodejs 环境配置
+
+
+> nvm 
+> npm 
+> yarn
+
+
+
+[](https://blog.miniasp.com/post/2020/07/27/Build-Golang-Dev-Box-in-Windows)

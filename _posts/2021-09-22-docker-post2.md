@@ -2,7 +2,7 @@
 layout:     post
 title:      Docker World (一)
 subtitle:   docker 最常用的img
-date:       2021-09-15
+date:       2021-09-22
 author:     lanbery
 header-img: img/docker-post-banner.png
 header-color: #33b
@@ -14,9 +14,7 @@ tags:
 
 > 
 
-# Window WSL2 基础概念
 
-> windows10目前推出了WSL2，相对于WSL采用API转换的方式， WSL2 则完全不同，win10 开始内置了一个轻量级虚拟机，经过不断的优化，这个虚拟机实现了与 windows 的高度集成，实现了虚拟机的高性能运行，WSL2 便是运行在虚拟机上的一个完整的 linux 内核。因此WSL2给了在windows更接近原生linux的体验，同时wsl2 的开启速度有了非常明显的提升，几乎不需要再等待
 
 ```bash
 wsl -l -v  # 查看当前WSL 列表
@@ -198,15 +196,3 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS  
 docker exec -it <container id> /bin/bash
 ```
 
-## WSL 下 设置Proxy 
-
-> 前提宿主window VPN 开启"允许局域网连接"
-
-```bash
-## 获取主机 IP
-## 主机 IP 保存在 /etc/resolv.conf 中
-export hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
-export all_proxy="socks5://${hostip}:10808"
-
-unset all_proxy  # 取消 代理
-```
