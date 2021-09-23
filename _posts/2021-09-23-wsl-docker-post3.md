@@ -2,7 +2,7 @@
 layout:     post
 title:      WSL2 搭建linux 开发环境(三)
 subtitle:   WSL2 配置golang 开发环境
-date:       2021-09-20
+date:       2021-09-23
 author:     lanbery
 header-img: img/golang-banner2.jpg
 header-color: #33b
