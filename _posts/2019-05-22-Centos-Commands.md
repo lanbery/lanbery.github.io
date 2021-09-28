@@ -36,7 +36,11 @@ history -c #立即清空里的history当前历史命令的记录
 :set nu
 :wq
 ```
+# 查看开机 服务列表
 
+```bash
+systemctl list-unit-files
+```
 
 # timezone
 > Centos7 timezone set 

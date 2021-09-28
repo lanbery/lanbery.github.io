@@ -12,8 +12,11 @@ tags:
     - Javascript
     - components  
 ---
-
 > Javascript world components
+
+# tree-shaking
+
+> tree-shaking 的功能就是把我们 JS 中无用的代码，给去掉，如果把打包工具通过入口文件，产生的依赖树比作 tree，tree-shaking 就是把依赖树中用不到的代码 shaking 掉。
 
 
 # 3box-js

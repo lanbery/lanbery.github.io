@@ -48,14 +48,16 @@ module.exports = function(grunt) {
                 files: ['js/<%= pkg.name %>.js'],
                 tasks: ['uglify'],
                 options: {
-                    spawn: true,
+                    spawn: false,
+                    interrupt: true,
                 },
             },
             less: {
                 files: ['less/*.less'],
                 tasks: ['less'],
                 options: {
-                    spawn: true,
+                    spawn: false,
+                    interrupt: true,
                 }
             },
         },
