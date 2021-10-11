@@ -208,3 +208,39 @@ git submodule add url ./submod_folder
 <a href="https://blog.systemctl.top/2017/2017-09-28_set-proxy-for-git-and-ssh-with-socks5/" target="_blank">Git Proxy</a>
 
 
+## lerna version 
+
+> git push --follow-tags --no-verify --atomic origin main
+
+> 造成这个错误很有可能是网络不稳定，连接超时导致的，
+```text
+nable to access 'https://github.com/*.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+```
+
+> 解决方式
+
+```bash
+git config http.sslVerify "false"
+```
+
+--- 
+# Git commit 注释规范
+
+> AngularJS 在开发者文档中关于 git commit 的指导说明，提到严格的 git commit 格式规范可以在浏览项目历史的过程中看到更易读的信息，并且能用 git commit 的信息直接生成 AngularJS 的 changelog 
+
+### 规范模板
+
+commit messages 由 header 、body 、footer 组成。
+
+header 又包含 type 、scope 、subject 。header 是必需的，不过其中的 scope 是可选的。
+
+```text
+<type>(<scope>): <subject>
+// 空行
+<BLANK LINE>
+<body>
+// 空行
+<BLANK LINE>
+<footer>
+```
+

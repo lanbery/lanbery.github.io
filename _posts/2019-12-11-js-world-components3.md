@@ -72,7 +72,7 @@ Install external dependencies matching glob at the repo root so they're availabl
 
 - [web3js](https://github.com/ChainSafe/web3.js)
 - [demo](https://github.com/nshen/ts-lerna-repo)
-
+- [基于 Lerna 管理 packages 的 Monorepo 项目最佳实践](https://github.com/morrain/lerna-learning)
 
 ---
 # Typescript
@@ -92,3 +92,5 @@ tsc -p <tsconfig.json>
 
 > https://juejin.cn/post/6844904058394771470
 > https://segmentfault.com/a/1190000040147085
+> https://github.com/zxpsuper/qrcode-with-logos
+> https://medium.com/@dandobusiness/setting-up-typescript-in-a-mono-repo-cd49a38d6030
