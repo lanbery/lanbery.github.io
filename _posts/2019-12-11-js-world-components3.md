@@ -76,7 +76,55 @@ lerna run build # 运行 packages/下每个含有packag.json build 的脚本命�
 lerna bootstrap --hoist
 ```
 
+- 解析需要安装的依赖，保存在depsToInstall中
+- 判断是否开启hoist功能并且该依赖在packages中是否出现了多次，若不满足则向下执行
+- 检测在出现的多次中最常出现的版本号(commonVersion)
+- 若在根目录的依赖中也存在则比较版本号(rootVersion)，若不同则发出警告
+- 在根节点上安装最佳版本的依赖
+- 在叶子节点上安装其他出现次数较少的版本且未安装的依赖
+
 Install external dependencies matching glob at the repo root so they're available to all packages. Any binaries from these dependencies will be linked into dependent package node_modules/.bin/ directories so they're available for npm scripts. If the option is present but no glob is given the default is ** (hoist everything). This option only affects the bootstrap command
+
+**ISSUE**
+
+> --hoist  在指定 yarn 时无效
+
+> correct config
+
+- root package.json 
+
+```json
+{
+    "workspaces": {
+        "packages":[
+            "packages/*"  // this will instead lerna.json packages config
+        ],
+        "nohoist":[
+            "**"    // 指定所有package dependencies 不提升至根项目目录下(node_modules)
+        ]
+    }
+}
+```
+
+- root lerna.json
+
+```json
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    }
+  },
+  "version": "independent",
+  // "npmClient":"yarn",remove this will issue:
+  "useWorkspaces": true
+```
+
+- root .yarnrc
+> 
+workspaces-experimental true
+
 
 
 **lerna 参考项目**
@@ -108,3 +156,5 @@ tsc -p <tsconfig.json>
 . [typescript+karma+mocha Test](https://blog.crimx.com/2019/06/19/%E6%90%AD%E5%BB%BA-karma-mocha-chai-%E6%B5%8B%E8%AF%95-typescript-%E9%A1%B9%E7%9B%AE/)
 
 > [lerna+mocha+ts](https://scriptable.com/blog/typescript-lerna-monorepo-setup)
+> https://www.adaltas.com/en/2021/01/11/js-monorepos-versioning-publishing/
+
