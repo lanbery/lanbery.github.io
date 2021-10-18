@@ -26,13 +26,21 @@ tags:
 
 ## lerna commands
 
+> lerna 命令无论是在packages 子目录下还是项目根目录执行命令,命令basedir 都是项目根目录,应该是基于项目下lerna.json 文件的相对位置判定
+
+
 ```bash
 # 创建一个新的 git 代码仓库
 git init lerna-repo && cd lerna-repo
 # 将上述仓库转变为一个 Lerna 仓库
 lerna init -i # --independent/-i – 使用独立的 版本控制模式
 
-lerna run 
+lerna creaate <package:name>  # 创建子package
+lerna add <depedency pack> --dev # 为子packages <所有子pkg>添加依赖 
+lerna bootstrap --hoist #
+lerna add <@org/pkgName> --scope=<@org/demo> # 为demo 添加dependency依赖
+lerna run <packages/**/package.json:script$command>   # 执行子包下script命令
+lerna run <command> --scope <pkgname>  # 执行指定子包下 script 命令
 ```
 
 #### lerna run
@@ -46,6 +54,9 @@ lerna run build # 运行 packages/下每个含有packag.json build 的脚本命�
 
 ```js
 {
+    // 每个子package都有自己的node_modules，
+    // 通过这样设置后，只有顶层有一个node_modules ,package.json 增加 workspcaes:[]
+    "useWorkspaces":true, 
     command:{
         run:{
 
@@ -94,3 +105,6 @@ tsc -p <tsconfig.json>
 > https://segmentfault.com/a/1190000040147085
 > https://github.com/zxpsuper/qrcode-with-logos
 > https://medium.com/@dandobusiness/setting-up-typescript-in-a-mono-repo-cd49a38d6030
+. [typescript+karma+mocha Test](https://blog.crimx.com/2019/06/19/%E6%90%AD%E5%BB%BA-karma-mocha-chai-%E6%B5%8B%E8%AF%95-typescript-%E9%A1%B9%E7%9B%AE/)
+
+> [lerna+mocha+ts](https://scriptable.com/blog/typescript-lerna-monorepo-setup)
