@@ -24,6 +24,32 @@ cat /etc/issue
 cat /etc/redhat-release
 
 cat /proc/version
+
+cat /etc/group  # 用户组
+cat /etc/passwd # 用户
+
+cut -d : -f 1 /etc/passwd #
+
+# 切换 root 
+sudo -i
+
+```
+
+## 为用户授权 root
+
+> 检查 /etc/sudoers  
+
+```bash
+%wheel  ALL=(ALL)       ALL # 取消注释
+
+usermod -g wheel <user> # 授权 
+```
+以用户 exampleuser 登录系统，使用 sudo 命令来提权，提权时需输入 exampleuser 的密码，默认情况下，一次提权有5分钟有效期
+
+> 另外一种方式 添加 /etc/sudoers
+
+```bash
+user ALL=(ALL) NOPASSWD:ALL  # 在root 下添加
 ```
 
 # history

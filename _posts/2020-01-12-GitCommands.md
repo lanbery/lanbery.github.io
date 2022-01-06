@@ -208,6 +208,37 @@ git submodule add url ./submod_folder
 <a href="https://blog.systemctl.top/2017/2017-09-28_set-proxy-for-git-and-ssh-with-socks5/" target="_blank">Git Proxy</a>
 
 
+----
+
+# Git 回滚 & 恢复
+
+
+### 误删除本地文件恢复
+
+```bash
+git status # 
+git reset HEAD <dir/file> # 针对目录或文件
+git checkout src/ui
+```
+
+> git reset HEAD src/ui
+
+```text
+M       src/store/index.js
+D       src/store/initial-p3-state.js
+D       src/ui/scss/_all.scss
+D       src/ui/scss/_brv-core.scss
+D       src/ui/scss/_mixin.scss
+D       src/ui/scss/_reset.scss
+D       src/ui/scss/_utilities.scss
+D       src/ui/scss/_variables.scss
+D       src/ui/scss/utils/classname-util.js
+M       src/widgets/select/select.scss
+```
+
+
+
+
 ## lerna version 
 
 > git push --follow-tags --no-verify --atomic origin main
