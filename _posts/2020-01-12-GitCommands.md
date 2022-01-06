@@ -112,17 +112,40 @@ git diff hash1 hash2 --stat         // 对比所有更改
 git diff hash hash ./file 
 ```
 
-## git command 
-> fix 规范
+## Git Message 规范
 
-``` bash
-add: 提交
-update：更新
-remove：移动
-delete：删除
-feature: 功能
-change：修改
-fix：修复bug
+> commit message格式 
+
+  <type>(<scope>): <subject>
+
+**type(必须)**
+
+
+- upd：更新某功能（不是 feat, 不是 fix）
+- feat：新功能（feature）
+- fix/to：修补 bug,fix 产生diff并自动修复此问题。适合于一次提交直接修复问题,to: 只产生diff不自动修复此问题。适合于多次提交
+- docs：文档（documentation）
+- style： 格式（不影响代码运行的变动）
+- refactor：重构（即不是新增功能，也不是修改 bug 的代码变动）
+- test：增加测试
+- chore：构建过程或辅助工具的变动
+- perf：优化相关，比如提升性能、体验。
+- revert：回滚到上一个版本
+- merge：代码合并。
+- sync：同步主线或分支的Bug。
+
+**scope(可选)**
+
+  scope用于说明 commit 影响的范围
+
+**subject(必须)**
+
+  subject是commit目的的简短描述，不超过50个字符
+
+
+```bash
+fix(DAO):用户查询缺少username属性 
+feat(Controller):用户查询接口开发
 ```
 
 ## 切换Remote Url
@@ -236,8 +259,31 @@ D       src/ui/scss/utils/classname-util.js
 M       src/widgets/select/select.scss
 ```
 
+## Git reset back commit hash
 
 
+### 方式一
+> Git 回滚: 强制 push 方式
+
+- 0: 如本地有未提交代码,可git checkout -b for-reset-tmp && git add . && git commit -am 'xxxx' && git checkout current branch
+- 1: git pull 保证本地与remote 一致
+- 2: 备份当前分支(如有必要)
+- 3: git log [--pretty=online] 查找要回复的hash
+- 4: git reset --hard <commit hash>
+- 5: git push -f origin <branch name>  # 强制更新远程分支
+
+### 方式二
+
+> 从回滚位置生成新的commit hash, 
+
+- 0: 如本地有未提交代码,可git checkout -b for-reset-tmp && git add . && git commit -am 'xxxx' && git checkout current branch
+- 1: git pull   # 保证当前工作区是干净的，并且和远程分支代码一致
+- 2: 备份分支(如有必要)
+- 3: git revert <hash> # 不加 --no-commit 生成新的hash
+- 4: git push
+
+
+----
 
 ## lerna version 
 
