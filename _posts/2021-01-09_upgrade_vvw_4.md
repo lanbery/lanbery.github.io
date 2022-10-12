@@ -2,20 +2,20 @@
 layout:     post
 title:      Vue,Vuex,Webpack...
 subtitle:   在vue-cli init 项目基础上升级webpack4
-date:       2021-01-09
+date:       2020-01-09
 author:     lanbery
 header-img: img/post-bg-hacker.jpg
 catalog: true
 tags:
     - program language
+    - vue
     
 ---
 
 > developer
 > Vue
 
-> 参考 [vue](https://www.jianshu.com/p/540e7924af1f) https://www.jianshu.com/p/540e7924af1f
-> https://www.jianshu.com/p/bec94ad1d9f0
+
 # vue-cli 创建项目
 
 ```bash
