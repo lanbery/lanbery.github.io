@@ -251,3 +251,54 @@ https://github.com/jhen0409/react-chrome-extension-boilerplate.git
 https://developer.aliyun.com/mirror/npm/package/react-redux-chrome-extension-boilerplate
 
 https://smellycode.com/chrome-extension-live-reloading-with-react/ 
+
+## Sentry 
+
+> 什么是sentry?
+
+当我们完成一个业务系统的上线时，总是要观察线上的运行情况，对于每一个项目，我们都没办法保证代码零BUG、零报错，即便是经历过测试，因为测试永远无法做到100%覆盖，用户也不会总是按照我们所预期的进行操作，在上线后也会出现一些你预料不到的问题，而这种情况下，广大的用户其实才是最好的测试者。当生产环境中产生了一个 bug 时，如何做到迅速报警，找到问题原因，修复后又如何在线上验证？此时我们需要一个高效的错误监控系统。sentry扮演着一个错误收集的角色，将你的项目和sentry结合起来，无论谁在项目使用中报错，sentry都会第一次时间通知开发者，我们需要在系统异常时主动对其进行收集上报，出现了什么错误，错误出现在哪，帮你记录错误，以制定解决方案并进行优化迭代。
+sentry是一个基于Django构建的现代化的实时事件日志监控、记录和聚合平台,主要用于如何快速的发现故障。支持几乎所有主流开发语言和平台,并提供了现代化UI,它专门用于监视错误和提取执行适当的事后操作所需的所有信息,而无需使用标准用户反馈循环的任何麻烦。官方提供了多个语言的SDK.让开发者第一时间获悉错误信息,并方便的整合进自己和团队的工作流中.官方提供saas版本免费版支持每天5000个event.
+sentry支持自动收集和手动收集两种错误收集方法.我们能成功监控到vue中的错误、异常，但是还不能捕捉到异步操作、接口请求中的错误，比如接口返回404、500等信息，此时我们可以通过Sentry.caputureException()进行主动上报。使用sentry需要结合两个部分，客户端与sentry服务端；客户端就像你需要去监听的对象，比如公司的前端项目，而服务端就是给你展示已搜集的错误信息，项目管理，组员等功能的一个服务平台
+
+### 什么是DSN？
+DSN是连接客户端(项目)与sentry服务端,让两者能够通信的钥匙；每当我们在sentry服务端创建一个新的项目，都会得到一个独一无二的DSN，也就是密钥。在客户端初始化时会用到这个密钥，这样客户端报错，服务端就能抓到你对应项目的错误了。之前版本的sentry对于密钥分为公钥和私钥，一般前端用公钥(DSN(Public))，但是现在的版本舍弃了这种概念，只提供了一个密钥
+
+### 什么是event
+每当项目产生一个错误，sentry服务端日志就会产生一个event，记录此次报错的具体信息。一个错误，对应一个event
+
+
+### 什么是issue
+同一类event的集合，一个错误可能会重复产生多次，sentry服务端会将这些错误聚集在一起，那么这个集合就是一个issue。
+
+### 什么是Raven
+raven是sentry官方针对vue推荐的插件,我们在项目中初始化，让项目链接sentry的前提，都得保证已经引入了raven-js，以及我们手动提交错误的各类方法，都由Raven提供
+
+
+### 监控原理
+
+- 1.传统的前端监控原理分为异常捕获和异常上报。一般使用onerror捕获前端错误：
+
+```js
+window.onerror = (msg, url, line, col, error) => {
+  console.log('onerror')
+  // TODO
+}
+```
+
+- 2.但是onerror事件无法捕获到网络异常的错误(资源加载失败、图片显示异常等)，例如img标签下图片url 404 网络请求异常的时候，onerror无法捕获到异常，此时需要监听unhandledrejection。
+
+```js
+window.addEventListener('unhandledrejection', function(err) {
+  console.log(err)
+})
+```
+- 3.捕获的异常如何上报？常用的发送形式主要有两种:
+通过 ajax 发送数据(xhr、jquery...)
+动态创建 img 标签的形式
+
+```js
+function report(error) {
+  var reportUrl = 'http://xxxx/report'
+  new Image().src = reportUrl + '?error=' + error
+}
+```
