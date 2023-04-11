@@ -39,4 +39,23 @@ Larix Broadcaster允许通过WiFi，EDGE，3G，LTE和5G将来自移动设备的
 
 ![App Config](/img/livestream/live-magewell-solution01-1.png)
 
+## Magewell Cloud 作为listener
+
+## 接收端设备配置
+
+- 1. 登录解码器Web GUI，点击进入“系统设置-网络”页签，打开“手动设置IP地址”开关，填写IP地址、子网掩码等信息，点击“应用”
+  IP自动获取
+
+- 2. 进入“数据源”页签，点击“添加”，选择“MPEG-TS SRT” 
+
+- 3. 在弹出的页面中填写端口号（如图中8000），点击“确定”。
+
+需要注意 streamid 需要与 app streamid 结尾一致
+![App Config](/img/livestream/live-magewell-solution01-2.png)
+
+
+## 测试
+
+- 1. 手机开启 Larix App  
+- 2. 点击中间录制按钮
 
