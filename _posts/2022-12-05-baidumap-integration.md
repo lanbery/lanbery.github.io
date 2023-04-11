@@ -1,4 +1,4 @@
-**---
+---
 layout:     post
 title:      Javascript Integrate Baidu Map API
 subtitle:   
