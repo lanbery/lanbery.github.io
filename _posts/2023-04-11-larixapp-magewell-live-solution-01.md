@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      SRT Stream live solution
+title:      SRT Stream live solution (Ⅰ)
 subtitle:   Larix Broadcaster push to Magewell Cloud
 date:       2023-04-11
 author:     lanbery
@@ -23,11 +23,11 @@ Larix Broadcaster允许通过WiFi，EDGE，3G，LTE和5G将来自移动设备的
 - 2. Magewell Cloud Server
 - 3. 显示器一台、笔记本电脑一台、网线和HDMI线缆若干
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/3ib9RyR37BXCJ6JQpia2ibvW0G7PiaaHFnfticnOk27ImjTxnTLdE7I7SicM1d6a5NyQLckRt5Aydn2eDA84UKiacYkbg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" />
+![Solution](/img/livestream/live-magewell-solution01.png)
 
-![PoW](/img/livestream/live-magewell-solution01.png)
+# 操作步骤
 
-## Larix App 配置
+## 发送端 Larix App 配置
 
 - Settings --> Connections --> new connection
 
@@ -36,5 +36,7 @@ Larix Broadcaster允许通过WiFi，EDGE，3G，LTE和5G将来自移动设备的
 - url : srt://47.122.x.x:8000
 - Mode: default
 - streamid: upload.srt/live/[sub-stream-name] 这里与设备端 stream id 一致
+
+![App Config](/img/livestream/live-magewell-solution01-1.png)
 
 
