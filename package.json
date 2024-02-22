@@ -9,26 +9,26 @@
         "url": "https://github.com/lanebry"
     },
     "bugs": "https://github.com/lanebry/lanebry.github.io/issues",
-    "devDependencies": {
-        "fast-date-format": "^2.2.4",
-        "grunt": "^1.4.1",
-        "grunt-banner": "~0.2.3",
-        "grunt-contrib-less": "~0.11.4",
-        "grunt-contrib-uglify": "~0.5.1",
-        "grunt-contrib-watch": "^1.1.0",
-        "npm-run-all": "^4.1.5",
-        "shelljs": "^0.8.3"
-    },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
-        "py3view": "cd _site; python3 -m http.server 8020",
+        "py3view": "cd _site && python -m http.server 8020",
         "watch": "grunt watch & npm run preview & jekyll serve -w",
         "py3wa": "grunt watch & npm run py3view & jekyll serve -w",
-        "g:watch":"grunt watch -v",
-        "j:serve":"jekyll serve -w",
-        "dev":"npm run preview & jekyll serve -w",
+        "g:watch": "grunt watch -v",
+        "serve": "jekyll serve -w",
+        "dev": "npm run py3view & jekyll serve -w",
         "boil": "git push boilerplate boilerplate:master",
         "push": "node ci/git-push.js",
         "cafe": "git co gitcafe-pages; git merge master; git push gitcafe gitcafe-pages:gitcafe-pages --tag; git co master;"
+    },
+    "devDependencies": {
+        "fast-date-format": "^2.2.4",
+        "grunt": "^1.6.1",
+        "grunt-banner": "^0.6.0",
+        "grunt-contrib-less": "^3.0.0",
+        "grunt-contrib-uglify": "^5.2.2",
+        "grunt-contrib-watch": "^1.1.0",
+        "npm-run-all": "^4.1.5",
+        "shelljs": "^0.8.5"
     }
 }

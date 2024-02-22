@@ -1,4 +1,5 @@
 theme: jekyll-theme-minimal
+# remote_theme: pages-themes/minimal@v0.2.0
 # Site settings
 title: Lanbery Blog
 SEOTitle: 浮塵的博客 | lanbery Technology Blog 
@@ -28,14 +29,27 @@ twitter_username:   lamborCai
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude:
+  - less
+  - node_modules
+  - Gruntfile.js
+  - package.json
+  - README.md
+  - wiki
+  - Gemifle.lock
+
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-plugins: [jekyll-paginate]
+# plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  # - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Markdown settings
 # replace redcarpet to kramdown,

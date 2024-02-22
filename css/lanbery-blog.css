@@ -1,3 +1,8 @@
+/*!
+ * 浮塵 Blog v1.7.0 (https://lanbery.github.io)
+ * Copyright 2024 lanbery <lanbery@gmail.com>
+ */
+
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
@@ -26,14 +31,14 @@
 }
 .sidebar-container a:hover,
 .sidebar-container a:active {
-  color: #0085a1 !important;
+  color: #0085A1 !important;
 }
 .sidebar-container .tags a {
   border-color: #bfbfbf;
 }
 .sidebar-container .tags a:hover,
 .sidebar-container .tags a:active {
-  border-color: #0085a1;
+  border-color: #0085A1;
 }
 .sidebar-container .short-about img {
   width: 80%;
@@ -122,7 +127,7 @@
   background-color: #F5F5F5;
 }
 .side-catalog .catalog-body .active a {
-  color: #0085a1!important;
+  color: #0085a1 !important;
 }
 @media (max-width: 1200px) {
   .side-catalog {
@@ -166,7 +171,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #0085A1;
 }
 a img:hover,
 a img:focus {
@@ -235,7 +240,7 @@ pre code {
 }
 .post-container a:hover,
 .post-container a:focus {
-  color: #0085a1;
+  color: #0085A1;
 }
 .post-container h1,
 .post-container h2,
@@ -477,14 +482,14 @@ pre code {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #0085A1;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #0085A1;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -610,7 +615,7 @@ pre code {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #0085A1;
 }
 .post-preview > a > .post-title {
   font-size: 21px;
@@ -638,7 +643,7 @@ pre code {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #0085A1;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -660,7 +665,7 @@ pre code {
   color: #a3a3a3;
 }
 .post-content-preview:hover {
-  color: #0085a1;
+  color: #0085A1;
 }
 @media only screen and (min-width: 768px) {
   .post-content-preview {
@@ -700,14 +705,14 @@ footer .copyright a {
 }
 footer .copyright a:hover,
 footer .copyright a:focus {
-  color: #0085a1;
+  color: #0085A1;
 }
 .floating-label-form-group {
   font-size: 14px;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
@@ -729,28 +734,28 @@ footer .copyright a:focus {
   top: 2em;
   margin: 0;
   font-size: 0.85em;
-  line-height: 1.764705882em;
+  line-height: 1.76470588em;
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
-  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
-  -moz-transition: top 0.3s ease,opacity 0.3s ease;
-  -ms-transition: top 0.3s ease,opacity 0.3s ease;
-  transition: top 0.3s ease,opacity 0.3s ease;
+  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+  -moz-transition: top 0.3s ease, opacity 0.3s ease;
+  -ms-transition: top 0.3s ease, opacity 0.3s ease;
+  transition: top 0.3s ease, opacity 0.3s ease;
 }
 .floating-label-form-group::not(:first-child) {
   padding-left: 14px;
-  border-left: 1px solid #eeeeee;
+  border-left: 1px solid #eee;
 }
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #0085A1;
 }
 form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #eee;
 }
 .btn {
   /* Hux learn from
@@ -772,8 +777,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #0085A1;
+  border: 1px solid #0085A1;
   color: white;
 }
 .pager {
@@ -809,8 +814,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #0085A1;
+  border: 1px solid #0085A1;
 }
 .pager li > a:hover > span,
 .pager li > a:focus > span {
@@ -827,12 +832,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #0085A1;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #0085A1;
 }
 img::selection {
   color: white;
@@ -1040,7 +1045,7 @@ img::-moz-selection {
   box-shadow: none;
 }
 .comment #ds-thread #ds-reset .ds-post-button:hover {
-  background: #eeeeee;
+  background: #eee;
 }
 #ds-smilies-tooltip ul.ds-smilies-tabs li a {
   background: white !important;

@@ -6,3 +6,6 @@ _site/
 node_modules
 package-lock.json
 yarn.lock
+
+# Gemfile
+Gemfile.lock
