@@ -10,10 +10,9 @@
     },
     "bugs": "https://github.com/lanebry/lanebry.github.io/issues",
     "scripts": {
-        "preview": "cd _site; python -m SimpleHTTPServer 8020",
+        "preinstall": "bundle",
         "py3view": "cd _site && python -m http.server 8020",
-        "watch": "grunt watch & npm run preview & jekyll serve -w",
-        "py3wa": "grunt watch & npm run py3view & jekyll serve -w",
+        "watch": "grunt watch & npm run py3view & jekyll serve -w",
         "g:watch": "grunt watch -v",
         "serve": "jekyll serve -w",
         "dev": "npm run py3view & jekyll serve -w",
