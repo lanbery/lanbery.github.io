@@ -13,7 +13,7 @@
         "preinstall": "bundle",
         "build":"jekyll build",
         "py3view": "cd _site && python -m http.server 8020",
-        "dev": "grunt watch & npm run py3view & jekyll serve -w",
+        "dev": "grunt watch && jekyll serve -w",
         "g:watch": "grunt watch -v",
         "serve": "jekyll serve -w",
         "preview": "npm run py3view & jekyll serve -w",
