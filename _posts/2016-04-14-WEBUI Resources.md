@@ -7,7 +7,7 @@ author:     lanbery
 header-img: img/developer-guide-blog-2.png
 catalog: true
 tags:
-    - WebUI
+    - UI
     
 ---
 

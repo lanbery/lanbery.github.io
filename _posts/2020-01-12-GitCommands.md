@@ -9,7 +9,6 @@ catalog: true
 tags:
     - developer
     - Git
-    
 ---
 
 > Git 常用命令
@@ -19,7 +18,7 @@ tags:
 ### Git branch
 使用Git创建本地分支，并push到远程
 
-``` bash
+
   - git branch -a                 //查看所有分支
   - git status                  //查看状态
   - git checkout -b newBranch           //新建本地分支
@@ -28,7 +27,7 @@ tags:
   - git push --set-upstream origin sol5     //管理本地默认推送分支，直接git push
   - git push origin :newBranch          //通过推送空分支的方式删除远程分支
   - git push origin --delete newBranch      //删除远程分支
-```
+
 
 ### git tags
 
@@ -116,23 +115,22 @@ git diff hash hash ./file
 
 > commit message格式 
 
-  <type>(<scope>): <subject>
-
 **type(必须)**
 
 
-- upd：更新某功能（不是 feat, 不是 fix）
-- feat：新功能（feature）
-- fix/to：修补 bug,fix 产生diff并自动修复此问题。适合于一次提交直接修复问题,to: 只产生diff不自动修复此问题。适合于多次提交
-- docs：文档（documentation）
-- style： 格式（不影响代码运行的变动）
-- refactor：重构（即不是新增功能，也不是修改 bug 的代码变动）
-- test：增加测试
-- chore：构建过程或辅助工具的变动
-- perf：优化相关，比如提升性能、体验。
-- revert：回滚到上一个版本
-- merge：代码合并。
-- sync：同步主线或分支的Bug。
+  - upd：更新某功能（不是 feat, 不是 fix）
+  - feat：新功能（feature）
+  - fix/to：修补 bug,fix 产生diff并自动修复此问题。适合于一次提交直接修复问题,to: 只产生diff不自动修复此问题。适合于多次提交
+  - docs：文档（documentation）
+  - style： 格式（不影响代码运行的变动）
+  - refactor：重构（即不是新增功能，也不是修改 bug 的代码变动）
+  - test：增加测试
+  - chore：构建过程或辅助工具的变动
+  - perf：优化相关，比如提升性能、体验。
+  - revert：回滚到上一个版本
+  - merge：代码合并。
+  - sync：同步主线或分支的Bug。
+
 
 **scope(可选)**
 
@@ -263,6 +261,7 @@ M       src/widgets/select/select.scss
 
 
 ### 方式一
+
 > Git 回滚: 强制 push 方式
 
 - 0: 如本地有未提交代码,可git checkout -b for-reset-tmp && git add . && git commit -am 'xxxx' && git checkout current branch
@@ -289,7 +288,8 @@ M       src/widgets/select/select.scss
 
 > git push --follow-tags --no-verify --atomic origin main
 
-> 造成这个错误很有可能是网络不稳定，连接超时导致的，
+> 造成这个错误很有可能是网络不稳定，连接超时导致的
+
 ```text
 nable to access 'https://github.com/*.git/': OpenSSL SSL_read: Connection was reset, errno 10054
 ```
@@ -310,14 +310,3 @@ git config http.sslVerify "false"
 commit messages 由 header 、body 、footer 组成。
 
 header 又包含 type 、scope 、subject 。header 是必需的，不过其中的 scope 是可选的。
-
-```text
-<type>(<scope>): <subject>
-// 空行
-<BLANK LINE>
-<body>
-// 空行
-<BLANK LINE>
-<footer>
-```
-

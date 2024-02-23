@@ -11,11 +11,12 @@
     "bugs": "https://github.com/lanebry/lanebry.github.io/issues",
     "scripts": {
         "preinstall": "bundle",
+        "build":"jekyll build",
         "py3view": "cd _site && python -m http.server 8020",
-        "watch": "grunt watch & npm run py3view & jekyll serve -w",
+        "dev": "grunt watch & npm run py3view & jekyll serve -w",
         "g:watch": "grunt watch -v",
         "serve": "jekyll serve -w",
-        "dev": "npm run py3view & jekyll serve -w",
+        "preview": "npm run py3view & jekyll serve -w",
         "boil": "git push boilerplate boilerplate:master",
         "push": "node ci/git-push.js",
         "cafe": "git co gitcafe-pages; git merge master; git push gitcafe gitcafe-pages:gitcafe-pages --tag; git co master;"

@@ -7,8 +7,8 @@ author:     lanbery
 header-img: img/post-bg-hacker.jpg
 catalog: true
 tags:
-    - blockchain
-    - ethereum	
+  - blockchain
+  - ethereum	
 ---
 
 > 学习以太坊合约机制
