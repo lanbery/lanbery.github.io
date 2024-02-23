@@ -211,7 +211,7 @@ centos7 之后默认防火墙为firewall
 
 ```
 
-<img src="docs/images/2019/20191120172742806.png">
+<img src="img/2019/20191120172742806.png">
 
 ** Note **
 

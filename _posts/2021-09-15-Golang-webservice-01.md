@@ -18,7 +18,7 @@ tags:
 > Websocket :webcocket通信相比于http，它可不像http那样是无状态的请求，http每一次数据的查询、处理都需要重新发起请求，进行三个握手，四次挥手，而websocket只需要进行一次tcp连接，就可以维持长连接不断的进行发送和回复消息的请求，并且支持服务端向客户端的实时消息推送，这一点是http无法做到的.
 
 ---
-<img src="/docs/images/2021/websocket-workflow.png" />
+<img src="/img/2021/websocket-workflow.png" />
 
 ## 注册
 
@@ -68,7 +68,7 @@ r.GET("/ws", api.WsClient)
 
 > 客户端的连接地址则可以是：ws://127.0.0.1:8066/ws
 
-<img src="/docs/images/2021/websocket-connect-step.png" />
+<img src="/img/2021/websocket-connect-step.png" />
 
 开启程序服务器后，后台开启一个协程去监听处理发送给客户端的消息，包括：客户端注册、客户端注销、回复客户端消息
 
@@ -113,7 +113,7 @@ for {
 
 ```
 
-<img src="/docs/images/2021/websocket-message-transfer.png" />
+<img src="/img/2021/websocket-message-transfer.png" />
 
 ### websocket的client结构体
 
@@ -152,7 +152,7 @@ type BroadCastMessageData struct {
 
 建立连接后的正常数据通信（发送数据，回复数据）的流程图
 
-<img src="/docs/images/2021/websocket-message-transfer-01.png" />
+<img src="/img/2021/websocket-message-transfer-01.png" />
 
 在处理客户端消息的逻辑处理中，封装了一个handle文件，接收客户端请求指令的函数方法处理
 

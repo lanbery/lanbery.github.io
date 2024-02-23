@@ -114,7 +114,7 @@ console.log(chalk`{rgb(255,0,0).bold.bgRgb(255,255,255) Hello World}`);
 
 > react version management example
 
-![react version management example](https://lanbery.github.io/docs/images/2020/semver-demo.png?raw=true)
+![react version management example](https://lanbery.github.io/img/2020/semver-demo.png?raw=true)
 
 ## child_process
 

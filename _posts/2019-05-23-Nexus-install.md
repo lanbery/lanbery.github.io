@@ -139,7 +139,7 @@ WantedBy=multi-user.target<br/>
 <p >
    删除工作目录（sonatype-work/nexus3/）中生成文件【原始文件:log,orient,tmp,clean_cache】之外其他文件和目录，重启解决。
 </p>  
-![status](https://github.com/lanbery/lanbery.github.io/blob/master/docs/images/2019/2019-05-23_17-30-32.png?raw=true&width=450)
+![status](https://github.com/lanbery/lanbery.github.io/blob/master/img/2019/2019-05-23_17-30-32.png?raw=true&width=450)
 
 <hr/>
 

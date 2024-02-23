@@ -340,7 +340,7 @@ tar -xzf xxx.ca.tar.gz
 # Centos System 
 > 目录结构详细
 
-![目录结构](https://lanbery.github.io/docs/images/2019/centos-dir.png?raw=true)
+![目录结构](https://lanbery.github.io/img/2019/centos-dir.png?raw=true)
 
 ``` bash
 

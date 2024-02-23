@@ -67,7 +67,7 @@ func main() {
     - Conn：用户的每次请求链接
     - Handler：处理请求和生成返回信息的处理逻辑
 
-<img src="/docs/images/go/go-web-server.png" />
+<img src="/img/go/go-web-server.png" />
 
 >  Go 的 http 包的源码，通过下面的代码我们可以看到整个的 http 处理过程
 
@@ -104,7 +104,7 @@ func (srv *Server) Serve(l net.Listener) error {
 }
 ```
 
-<img src="/docs/images/go/go-web-req-resp.png" />
+<img src="/img/go/go-web-req-resp.png" />
 
 #### http包核心之一 Conn
 
@@ -242,6 +242,6 @@ func main() {
     - 自动校验客户端请求参数合法性
     - 大量微服务治理和并发工具包
 
-<img src="/docs/images/go/go-zero-framwork.png" />
+<img src="/img/go/go-zero-framwork.png" />
 
 [Source Code](https://github.com/zeromicro/go-zero)

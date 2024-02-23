@@ -11,7 +11,7 @@ tags:
     
 ---
 
-![模型](https://lanbery.github.io/docs/images/2019/eth-world.jpeg?raw=true) 
+![模型](https://lanbery.github.io/img/2019/eth-world.jpeg?raw=true) 
 
 > truffle
 

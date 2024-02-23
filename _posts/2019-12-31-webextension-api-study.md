@@ -4,7 +4,7 @@ title:      Web Extension API Study ☈
 subtitle:   ☈
 date:       2019-12-31
 author:     lanbery
-header-img: docs/images/2019/network_bg.png
+header-img: img/2019/network_bg.png
 catalog: true
 tags:
     - Browser
@@ -13,7 +13,7 @@ tags:
 
 # webRequest 
 
-<div><img src="/docs/images/2019/webRequest-flow.png" width="650"></div>
+<div><img src="/img/2019/webRequest-flow.png" width="650"></div>
 ## details 
 
 ``` text
