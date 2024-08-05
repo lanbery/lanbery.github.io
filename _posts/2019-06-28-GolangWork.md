@@ -40,7 +40,6 @@ tags:
 
 ### 学习资料
 
+- <a href="https://www.topgoer.com/" target="_blank" >GoLang 教程</a>
 - <a href="https://makeoptim.com/golang/standards/project-layout/#google_vignette" target="_blank" >Go 项目工程化</a>
-
-
 
