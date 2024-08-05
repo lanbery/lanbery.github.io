@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Centos7.x Golang 环境搭建
+title:      Golang 环境搭建&学习资料
 subtitle:   Golang 
 date:       2019-06-28
 author:     lanbery
@@ -38,7 +38,9 @@ tags:
 
 ----
 
+### 学习资料
 
+- <a href="https://makeoptim.com/golang/standards/project-layout/#google_vignette" target="_blank" >Go 项目工程化</a>
 
 
 
