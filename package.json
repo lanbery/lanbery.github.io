@@ -12,11 +12,11 @@
     "scripts": {
         "preinstall": "bundle",
         "build":"jekyll build",
-        "py3view": "cd _site && python -m http.server 8020",
+        "preview": "cd _site && python -m http.server 8020",
         "dev": "npm run py3view & py3view",
         "g:watch": "grunt watch -v",
         "serve": "jekyll serve -w",
-        "preview": "npm run py3view & jekyll serve -w",
+        "preview-old": "cd _site; python -m SimpleHTTPServer 8020",
         "boil": "git push boilerplate boilerplate:master",
         "push": "node ci/git-push.js",
         "cafe": "git co gitcafe-pages; git merge master; git push gitcafe gitcafe-pages:gitcafe-pages --tag; git co master;"

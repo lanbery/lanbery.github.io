@@ -65,4 +65,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ```bash
 yarn dev # development js & post
 yarn preview # development post only
+
+# "preview": "npm run py3view & jekyll serve -w",
+#  "preview": "cd _site; python -m SimpleHTTPServer 8020",
 ```
