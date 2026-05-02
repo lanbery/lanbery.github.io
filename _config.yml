@@ -38,7 +38,7 @@ exclude:
   - package.json
   - README.md
   - wiki
-  - Gemifle.lock
+  - Gemfile.lock
   - wiki
   - README.md
   - ci
@@ -61,6 +61,12 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
+
+# Silence deprecation warnings from third-party theme Sass imports.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
 
 
 
